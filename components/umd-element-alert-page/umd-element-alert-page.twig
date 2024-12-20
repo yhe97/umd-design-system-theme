@@ -1,0 +1,13 @@
+<umd-element-alert-page icon="true">
+  <h2 slot="headline">
+    {% block headline %}{% endblock %}
+  </h2>
+
+  <div slot="body" class="umd-rich-text">
+    {% block body %}{% endblock %}
+  </div>
+
+  <umd-element-call-to-action slot="actions" type="primary">
+    <a href="{% block cta %}{% endblock %}"><span>{% block cta_text %}{% endblock %}</span></a>
+  </umd-element-call-to-action>
+</umd-element-alert-page>

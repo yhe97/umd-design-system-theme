@@ -1,0 +1,19 @@
+<umd-element-banner-promo>
+  <p slot="headline">
+    {% block headline %}{% endblock %}
+  </p>
+
+  <div slot="text" class="umd-rich-text">
+    <p>
+      {% block body %}{% endblock %}
+    </p>
+  </div>
+
+  <div slot="actions">
+    <umd-element-call-to-action type="primary" theme="dark">
+      <a href="{% block cta %}{% endblock %}" aria-label="{% block cta_aria_label %}{% endblock %}">
+        {% block cta_text %}{% endblock %}
+      </a>
+    </umd-element-call-to-action>
+  </div>
+</umd-element-banner-promo>

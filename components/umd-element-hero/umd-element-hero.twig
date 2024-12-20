@@ -1,0 +1,20 @@
+<umd-element-hero type="{{ hero_type }}" theme="{{ hero_theme }}">
+  <img slot="image" src="{% block hero_image %}{% endblock %}"
+    alt="{% block hero_alt %}{% endblock %}" />
+  <p slot="eyebrow">
+    {% block eyebrow %}{% endblock %} 
+  </p>
+  <p slot="headline">
+    {% block headline %}{% endblock %} 
+  </p>
+  <p slot="text">
+    {% block main_text %}{% endblock %} 
+  </p>
+  <div slot="actions">
+    <umd-element-call-to-action type="primary" theme="dark">
+      <a href="{% block cta %}{% endblock %}" aria-label="{% block cta_aria_label %}{% endblock %}">
+        <span aria-hidden="true">{% block cta_text %}{% endblock %}</span>
+      </a>
+    </umd-element-call-to-action>
+  </div>
+</umd-element-hero>

@@ -1,0 +1,16 @@
+<umd-element-alert-site>
+  <h2 slot="headline">
+    <a href="{% block headline_url %}{% endblock %}">
+      {% block headline %}{% endblock %}
+    </a>
+  </h2>
+  <div slot="body" class="umd-rich-text">
+    <p>
+      {% block body %}{% endblock %}
+    </p>
+  </div>
+
+  <umd-element-call-to-action slot="actions" type="primary">
+    <a href="{% block cta %}{% endblock %}"><span>{% block cta_text %}{% endblock %}</span></a>
+  </umd-element-call-to-action>
+</umd-element-alert-site>

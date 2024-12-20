@@ -1,0 +1,7 @@
+tailwind:
+  version: VERSION
+  css:
+    component:
+      dist/index.css: { }
+  js:
+    js/init.js: { attributes: { type: module }}

@@ -1,0 +1,96 @@
+{#
+/**
+ * @file
+ * Theme override for the basic structure of a single Drupal page.
+ *
+ * Variables:
+ * - logged_in: A flag indicating if user is logged in.
+ * - root_path: The root path of the current page (e.g., node, admin, user).
+ * - node_type: The content type for the current node, if the page is a node.
+ * - head_title: List of text elements that make up the head_title variable.
+ *   May contain one or more of the following:
+ *   - title: The title of the page.
+ *   - name: The name of the site.
+ *   - slogan: The slogan of the site.
+ * - page_top: Initial rendered markup. This should be printed before 'page'.
+ * - page: The rendered page markup.
+ * - page_bottom: Closing rendered markup. This variable should be printed after
+ *   'page'.
+ * - db_offline: A flag indicating if the database is offline.
+ * - placeholder_token: The token for generating head, css, js and js-bottom
+ *   placeholders.
+ *
+ * @see template_preprocess_html()
+ */
+#}
+{%
+  set body_classes = [
+    logged_in ? 'user-logged-in',
+    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+    node_type ? 'page-node-type-' ~ node_type|clean_class,
+    db_offline ? 'db-offline',
+  ]
+%}
+<!DOCTYPE html>
+<html{{ html_attributes }}>
+  <head>
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+    <script src="https://unpkg.com/@universityofmaryland/web-components-library"></script>
+    <link
+      href="https://unpkg.com/@universityofmaryland/theme/dist/compiled.css"
+      rel="stylesheet"
+    />
+    <script>
+      window.addEventListener('load', () => {
+        const UmdComponents = window.Components;
+
+        for (const key in UmdComponents) {
+          UmdComponents[key].Load();
+        }
+      });
+    </script>
+  </head>
+  <body{{ attributes.addClass(body_classes) }}>
+    {#
+      Keyboard navigation/accessibility link to main content section in
+      page.html.twig.
+    #}
+    <header aria-label="header">
+      <div class="umd-lock">
+        <a href="#main" class="umd-skip-content">Skip site navigation</a>
+      </div>
+  
+      {% embed 'umdds:umd-element-hero' with {
+        hero_type: 'background',
+        hero_theme: 'dark',
+        hero_image,
+        hero_alt,
+        eyebrow,
+        headline,
+        main_text,
+        cta,
+        cta_text
+      } %}
+
+        {% block hero_image %}https://brandportal.umd.edu/m/6e8bbb2f06bb96fb/Square-ESJLTC_Students_09262018_0251.jpg{% endblock %}
+        {% block hero_alt %}Kids doing work{% endblock %}
+        {% block eyebrow %}Good Morning{% endblock %}
+        {% block headline %}Does this work?{% endblock %}
+        {% block main_text %}Hello this is content{% endblock %}
+        {% block cta %}https://www.lib.umd.edu{% endblock %}
+        {% block cta_text %}Click here{% endblock %}
+
+      {% endembed %}
+  
+      {% embed 'umdds:umd-element-breadcrumb' %}{% endembed %}
+
+      {{ page_top }}
+    </header>
+    {{ page }}
+    {{ page_bottom }}
+    <js-bottom-placeholder token="{{ placeholder_token }}">
+  </body>
+</html>
