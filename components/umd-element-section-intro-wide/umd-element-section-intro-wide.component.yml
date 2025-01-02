@@ -3,5 +3,5 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Intro Wide
 props:
   type: object
-  properties:
-slots:
+#   properties:
+# slots:

@@ -4,5 +4,5 @@ name: UMD Element Section Intro
 
 props:
   type: object
-  properties:
-slots:
+#   properties:
+# slots:
