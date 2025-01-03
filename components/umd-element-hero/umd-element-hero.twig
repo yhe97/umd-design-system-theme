@@ -1,20 +1,22 @@
 <umd-element-hero type="{{ hero_type }}" theme="{{ hero_theme }}">
-  <img slot="image" src="{% block hero_image %}{% endblock %}"
-    alt="{% block hero_alt %}{% endblock %}" />
+  <img slot="image" src="{{ hero_image }}"
+    alt="{{ hero_alt }}" />
   <p slot="eyebrow">
-    {% block eyebrow %}{% endblock %} 
+    {{ eyebrow }} {{ hero_type }} 
   </p>
   <p slot="headline">
-    {% block headline %}{% endblock %} 
+    {{ headline }} 
   </p>
   <p slot="text">
-    {% block main_text %}{% endblock %} 
+    {{ main_text }} 
   </p>
   <div slot="actions">
-    <umd-element-call-to-action type="primary" theme="dark">
-      <a href="{% block cta %}{% endblock %}" aria-label="{% block cta_aria_label %}{% endblock %}">
-        <span aria-hidden="true">{% block cta_text %}{% endblock %}</span>
-      </a>
-    </umd-element-call-to-action>
+    {% if cta %}
+      <umd-element-call-to-action type="primary" theme="dark">
+        <a href="{{ cta }}" aria-label="{{ cta_aria_label }}">
+          <span aria-hidden="true">{{ cta_text }}</span>
+        </a>
+      </umd-element-call-to-action>
+    {% endif %}
   </div>
 </umd-element-hero>

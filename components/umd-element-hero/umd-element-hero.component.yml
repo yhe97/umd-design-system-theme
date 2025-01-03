@@ -3,41 +3,61 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Hero
 props:
   type: object
+  required:
+    - hero_alt
+    - eyebrow
+    - headline
+    - main_text
+    - hero_type
+    - hero_theme
   properties:
     hero_type:
       type: string
       title: Hero Type
       description: "One of 'overlay', 'stacked', 'minimal'"
       # The enum directive restricts the possible values in the element to our list.
-      enum: ['overlay', 'stacked', 'minimal'] 
+      enum:
+        - 'overlay'
+        - 'stacked'
+        - 'minimal'
     hero_theme:
       type: string
       title: Hero Theme 
       description: "One of 'light', 'dark'"
       # The enum directive restricts the possible values in the element to our list.
-      enum: ['light', 'dark'] 
-slots:
-  hero_image:
+      enum:
+        - 'light'
+        - 'dark'
+    hero_image:
+      type: string
       title: Image
       description: Hero image
-  hero_alt:
+    hero_alt:
+      type: string
       title: Image Alt Content
       description: A description of the image for screen readers
-  eyebrow:
+    eyebrow:
+      type: string
       title: Eyebrow
       description: The eyebrow text
-  headline:
+    headline:
+      type: string
       title: Headline
       description: Headline content
-  main_text:
+    main_text:
+      type: string
       title: Main text
       description: Main text and markup
-  cta:
+    cta:
+      type: string
       title: Call to Action 
       description: URL
-  cta_text:
+    cta_text:
+      type: string
       title: Call to Action text
       description: Text related to CTA
-  cta_aria_label:
+    cta_aria_label:
+      type: string
       title: CTA Aria Label
       description: Arial label related to hero CTA
+# slots:
