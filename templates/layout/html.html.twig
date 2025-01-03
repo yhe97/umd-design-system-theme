@@ -62,31 +62,6 @@
       <div class="umd-lock">
         <a href="#main" class="umd-skip-content">Skip site navigation</a>
       </div>
-  
-      {% embed 'umdds:umd-element-hero' with {
-        hero_type: 'background',
-        hero_theme: 'dark',
-        hero_image,
-        hero_alt,
-        eyebrow,
-        headline,
-        main_text,
-        cta,
-        cta_text
-      } %}
-
-        {% block hero_image %}https://brandportal.umd.edu/m/6e8bbb2f06bb96fb/Square-ESJLTC_Students_09262018_0251.jpg{% endblock %}
-        {% block hero_alt %}Kids doing work{% endblock %}
-        {% block eyebrow %}Good Morning{% endblock %}
-        {% block headline %}Does this work?{% endblock %}
-        {% block main_text %}Hello this is content{% endblock %}
-        {% block cta %}https://www.lib.umd.edu{% endblock %}
-        {% block cta_text %}Click here{% endblock %}
-
-      {% endembed %}
-  
-      {% embed 'umdds:umd-element-breadcrumb' %}{% endembed %}
-
       {{ page_top }}
     </header>
     {{ page }}
