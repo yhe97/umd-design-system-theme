@@ -1,16 +1,17 @@
 <umd-element-alert-site>
   <h2 slot="headline">
-    <a href="{% block headline_url %}{% endblock %}">
-      {% block headline %}{% endblock %}
+    <a href="{{ headline_url }}">
+      {{ headline }}
     </a>
   </h2>
   <div slot="body" class="umd-rich-text">
     <p>
-      {% block body %}{% endblock %}
+      {{ body }}
     </p>
   </div>
-
-  <umd-element-call-to-action slot="actions" type="primary">
-    <a href="{% block cta %}{% endblock %}"><span>{% block cta_text %}{% endblock %}</span></a>
-  </umd-element-call-to-action>
+  {% if cta %}
+    <umd-element-call-to-action slot="actions" type="primary">
+      <a href="{{ cta }}"><span>{{ cta_text }}</span></a>
+    </umd-element-call-to-action>
+  {% endif %}
 </umd-element-alert-site>

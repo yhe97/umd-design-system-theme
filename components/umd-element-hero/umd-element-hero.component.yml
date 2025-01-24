@@ -5,29 +5,35 @@ props:
   type: object
   required:
     - hero_alt
-    - eyebrow
-    - headline
-    - main_text
-    - hero_type
-    - hero_theme
+    # - eyebrow
+    # - headline
+    # - main_text
+    # - hero_type
+    # - hero_theme
   properties:
     hero_type:
       type: string
       title: Hero Type
       description: "One of 'overlay', 'stacked', 'minimal'"
       # The enum directive restricts the possible values in the element to our list.
-      enum:
-        - 'overlay'
-        - 'stacked'
-        - 'minimal'
+      # Note: currently disabled enums, because the value passed through to template
+      #   is the numerical key rather than the value.
+      # enum:
+      #   - 'overlay'
+      #   - 'stacked'
+      #   - 'minimal'
+      # default: 'minimal'
     hero_theme:
       type: string
       title: Hero Theme 
       description: "One of 'light', 'dark'"
       # The enum directive restricts the possible values in the element to our list.
-      enum:
-        - 'light'
-        - 'dark'
+      # Note: currently disabled enums, because the value passed through to template
+      #   is the numerical key rather than the value.
+      # enum:
+      #   - 'light'
+      #   - 'dark'
+      # default: 'light'
     hero_image:
       type: string
       title: Image

@@ -3,5 +3,25 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Card
 props:
   type: object
-#   properties:
-# slots:
+  required:
+    - card_image
+    - card_image_alt
+    - eyebrow
+    - headline
+    - body
+  properties:
+    card_image:
+      type: string
+      title: Card Image (URL)
+    card_image_alt:
+      type: string
+      title: Card Image Alt
+    eyebrow:
+      type: string
+      title: Eyebrow text
+    headline:
+      type: string
+      title: Headline
+    body:
+      type: string
+      title: Body

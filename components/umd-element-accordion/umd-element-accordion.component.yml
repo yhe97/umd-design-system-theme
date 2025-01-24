@@ -3,11 +3,13 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Accordion 
 props:
   type: object
-#   properties:
-slots:
-  headline:
-      title: Headline 
-      description: The accordion element title
-  body:
-      title: Body
-      description: Accordion body
+  required:
+    - body
+    - headline 
+  properties:
+    body:
+      type: string
+      title: Body 
+    headline:
+      type: string
+      title: Headline

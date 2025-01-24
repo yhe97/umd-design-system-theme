@@ -3,20 +3,27 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Alert Site 
 props:
   type: object
+  required:
+    - headline
+    - body
   properties:
-slots:
-  headline:
+    headline:
+      type: string
       title: Headline 
       description: The accordion element title
-  headline_url:
+    headline_url:
+      type: string
       title: Headline Link 
       description: The alert URL
-  body:
+    body:
+      type: string
       title: Body
       description: Accordion body
-  cta:
+    cta:
+      type: string
       title: Call to Action 
       description: URL
-  cta_text:
+    cta_text:
+      type: string
       title: Call to Action text
       description: Text related to CTA
