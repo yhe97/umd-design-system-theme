@@ -3,5 +3,28 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element CTA
 props:
   type: object
-#   properties:
-# slots:
+  properties:
+    cta:
+      type: string
+      title: Call to Action
+      description: URL
+    cta_text:
+      type: string
+      title: Call to Action text
+      description: Text related to CTA
+    cta_aria_label:
+      type: string
+      title: Call to Action aria-label
+      description: Text related to CTA
+    element_size:
+      type: string
+      title: Use 'standard'
+      description: Text related to CTA
+    element_theme:
+      type: string
+      title: Theme
+      description: Use 'light' or 'dark'
+    action_type:
+      type: string
+      title: Action Type
+      description: Use 'primary' or 'secondary'

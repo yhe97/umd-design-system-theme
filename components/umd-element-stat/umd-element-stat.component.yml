@@ -3,5 +3,17 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Stat
 props:
   type: object
-#   properties:
-# slots:
+  required:
+  - stat
+  properties:
+    stat:
+      type: string
+      title: Stat
+      description: E.g., '10th'
+    body:
+      type: string
+      title: Stat Description
+    subtext:
+      type: string
+      title: Sub-Text
+      description: For example, use for attribution

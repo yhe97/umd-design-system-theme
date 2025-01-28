@@ -1,24 +1,18 @@
 <umd-element-quote>
   <p slot="quote">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-    convallis, eros id imperdiet scelerisque, enim libero consequat
-    elit, ut convallis ante magna eget nunc. Sed urna velit, finibus vel
-    velit nec, dapibus hendrerit leo.
+    {{ body }}
   </p>
-  <p slot="attribution">
-    Joseph Smithson, Class of 2025
-  </p>
-  <p slot="attribution-sub-text">
-    Optional Eyebrow
-  </p>
+  {% if attribution %}
+    <p slot="attribution">
+      {{ attribution }}
+    </p>
+  {% endif %}
+  {% if eyebrow %}
+    <p slot="attribution-sub-text">
+      {{ eyebrow }}
+    </p>
+  {% endif %}
   <div slot="actions">
-    <umd-element-call-to-action type="secondary">
-      <a href="/" aria-label="link to homepage">Home Link</a>
-    </umd-element-call-to-action>
-    <umd-element-call-to-action type="secondary">
-      <a href="/components" aria-label="link to components">
-        Components Link
-      </a>
-    </umd-element-call-to-action>
+    {% block cta_slot %}{% endblock %}
   </div>
 </umd-element-quote>

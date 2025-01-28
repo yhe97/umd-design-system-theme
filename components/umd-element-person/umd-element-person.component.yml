@@ -3,5 +3,25 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Person
 props:
   type: object
-#   properties:
-# slots:
+  #   properties:
+  # slots:
+  required:
+  - photo
+  - photo_alt
+  - person_name
+  properties:
+    photo:
+      type: string
+      title: Photo
+    photo_alt:
+      type: string
+      title: Photo Alt Text
+    person_name:
+      type: string
+      title: Name
+    job_title:
+      type: string
+      title: Job Title
+    email:
+      type: string
+      title: Email Address

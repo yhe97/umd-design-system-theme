@@ -1,15 +1,15 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Promo 
+name: UMD Element Promo
 props:
   type: object
   required:
-    - headline
-    - body
+  - headline
+  - body
   properties:
     headline:
       type: string
-      title: Headline 
+      title: Headline
       description: The accordion element title
     body:
       type: string
@@ -17,9 +17,13 @@ props:
       description: Accordion body
     cta:
       type: string
-      title: Call to Action 
+      title: Call to Action
       description: URL
     cta_text:
       type: string
       title: Call to Action text
       description: Text related to CTA
+  slots:
+    cta_slot:
+      title: Call to Action slot
+      description: Slot intended for CTA

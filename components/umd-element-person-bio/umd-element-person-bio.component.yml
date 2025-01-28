@@ -3,5 +3,40 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Bio
 props:
   type: object
-#   properties:
-# slots:
+  required:
+  - photo
+  - photo_alt
+  - person_name
+  - body
+  properties:
+    photo:
+      type: string
+      title: Photo
+    photo_alt:
+      type: string
+      title: Photo Alt Text
+    person_name:
+      type: string
+      title: Name
+    job_title:
+      type: string
+      title: Job Title
+    organization_url:
+      type: string
+      title: Organization URL
+    organization:
+      type: string
+      title: Organization
+    pronouns:
+      type: string
+      title: Pronouns
+    telephone:
+      type: string
+      title: Telephone
+      description: Numbers only. No dashes, dots, etc.
+    body:
+      type: string
+      title: Bio Text
+    email:
+      type: string
+      title: Email Address

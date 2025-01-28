@@ -5,13 +5,8 @@
     </a>
   </h2>
   <div slot="body" class="umd-rich-text">
-    <p>
-      {{ body }}
-    </p>
+    {{ body }}
   </div>
-  {% if cta %}
-    <umd-element-call-to-action slot="actions" type="primary">
-      <a href="{{ cta }}"><span>{{ cta_text }}</span></a>
-    </umd-element-call-to-action>
-  {% endif %}
+
+  {% block cta_slot %}{% endblock %}
 </umd-element-alert-site>

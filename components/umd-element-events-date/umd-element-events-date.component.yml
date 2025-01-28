@@ -1,19 +1,23 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Intro Wide
+name: UMD Element Events Date
 props:
   type: object
   required:
-  - headline
+  - element_date
+  - event
+  - event_url
   properties:
-    headline:
+    element_date:
       type: string
-      title: Headline
+      title: Date
+    event:
+      type: string
+      title: Event Name
+    event_url:
+      type: string
+      title: Event URL
     theme:
       type: string
       title: Theme
       description: Use 'light', 'dark'
-  slots:
-    cta_slot:
-      title: Call to Action slot
-      description: Slot intended for CTA

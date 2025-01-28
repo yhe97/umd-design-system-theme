@@ -1,11 +1,7 @@
-<umd-element-section-intro-wide>
+<umd-element-section-intro-wide theme="{{ theme }}">
   <h2 slot="headline">
-    FROM MARYLAND TODAY
+    {{ headline }}
   </h2>
 
-  <umd-element-call-to-action type="secondary" slot="actions">
-    <a href="https://today.umd.edu/">
-      <span>See all election related content</span>
-    </a>
-  </umd-element-call-to-action>
+  {% block cta_slot %}{% endblock %}
 </umd-element-section-intro-wide>

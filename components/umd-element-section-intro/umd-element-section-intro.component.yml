@@ -1,8 +1,26 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
 name: UMD Element Section Intro
-
 props:
   type: object
-#   properties:
-# slots:
+  required:
+  - body
+  - headline
+  properties:
+    body:
+      type: string
+      title: Body
+    headline:
+      type: string
+      title: Headline
+    separator:
+      type: string
+      title: Separator
+    theme:
+      type: string
+      title: Theme
+      description: Use 'light', 'dark'
+  slots:
+    cta_slot:
+      title: Call to Action slot
+      description: Slot intended for CTA

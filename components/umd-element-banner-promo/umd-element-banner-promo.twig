@@ -4,18 +4,12 @@
   </p>
 
   <div slot="text" class="umd-rich-text">
-    <p>
-      {{ body }}
-    </p>
+    {{ body }}
   </div>
 
   {% if cta %}
     <div slot="actions">
-      <umd-element-call-to-action type="primary" theme="dark">
-        <a href="{{ cta }}" aria-label="{{ cta_aria_label }}">
-          {{ cta_text }} 
-        </a>
-      </umd-element-call-to-action>
+      {% block cta_slot %}{% endblock %}
     </div>
   {% endif %}
 </umd-element-banner-promo>

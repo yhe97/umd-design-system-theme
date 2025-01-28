@@ -1,11 +1,15 @@
 <umd-element-person display="block">
-  <img slot="image" src="https://brandportal.umd.edu/m/325916a07815dda8/Medium_web-ChrisWalsh_09192018_1746.jpg"
-    alt="Image Description">
+  <img slot="image" src="{{ photo }}"
+    alt="{{ photo_alt }}">
   <p slot="name">
-    Christopher S. Walsh
+    {{ person_name }}
   </p>
-  <p slot="job-title">
-    Professor Emeritus
-  </p>
-  <a slot="email" href="mailto:email@umd.edu">email@umd.edu</a>
+  {%if job_title %}
+    <p slot="job-title">
+      {{ job_title }}
+    </p>
+  {% endif %}
+  {% if email %}
+    <a slot="email" href="mailto:{{ email }}">{{ email }}</a>
+  {% endif %}
 </umd-element-person>

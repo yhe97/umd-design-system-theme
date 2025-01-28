@@ -3,5 +3,7 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Carousel Thumbnail
 props:
   type: object
-#   properties:
-# slots:
+  slots:
+    cards_slot:
+      title: Cards slots
+      description: Slot intended for basic cards

@@ -3,5 +3,19 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Quote
 props:
   type: object
-#   properties:
-# slots:
+  required:
+  - body
+  properties:
+    body:
+      type: string
+      title: Quote Body
+    attribution:
+      type: string
+      title: Quote Attribution
+    eyebrow:
+      type: string
+      title: Eyebrow
+  slots:
+    cta_slot:
+      title: Call to Action slot
+      description: Slot intended for CTA

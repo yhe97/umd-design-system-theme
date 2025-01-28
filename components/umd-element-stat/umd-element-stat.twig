@@ -1,12 +1,13 @@
 <umd-element-stat>
   <div slot="stat">
-    10th
+    {{ stat }}
   </div>
   <div slot="text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut
+    {{ body }}
   </div>
-  <div slot="sub-text">
-    Source: 2022-23 U.S. News &amp; World Report
-  </div>
+  {% if subtext %}
+    <div slot="sub-text">
+      {{ subtext }}
+    </div>
+  {% endif %}
 </umd-element-stat>

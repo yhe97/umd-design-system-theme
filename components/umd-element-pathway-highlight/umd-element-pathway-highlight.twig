@@ -1,16 +1,24 @@
-<umd-element-quote>
-  <p slot="quote">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-    convallis, eros id imperdiet scelerisque, enim libero consequat
-    elit, ut convallis ante magna eget nunc. Sed urna velit, finibus vel
-    velit nec, dapibus hendrerit leo.
+<umd-element-pathway-highlight>
+  <p slot="highlight">
+    {{ highlight }}
   </p>
-  <p slot="attribution">
-    Joseph Smithson, Class of 2025
+  <p slot="highlight-attribution">
+    - {{ highlight_attrib }}
   </p>
-  <p slot="attribution-sub-text">
-    Optional Eyebrow
+  <p slot="eyebrow">
+    Optional Tagline
   </p>
+  <p slot="headline">
+    What does it take to change the world?
+  </p>
+  <div slot="text">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+      ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      aliquip ex ea commodo consequat.
+    </p>
+  </div>
   <div slot="actions">
     <umd-element-call-to-action type="secondary">
       <a href="/" aria-label="link to homepage">Home Link</a>
@@ -21,4 +29,5 @@
       </a>
     </umd-element-call-to-action>
   </div>
-</umd-element-quote>
+</umd-element-pathway-highlight>
+

@@ -4,11 +4,11 @@ name: UMD Element Card
 props:
   type: object
   required:
-    - card_image
-    - card_image_alt
-    - eyebrow
-    - headline
-    - body
+  - card_image
+  - card_image_alt
+  - eyebrow
+  - headline
+  - body
   properties:
     card_image:
       type: string
@@ -25,3 +25,6 @@ props:
     body:
       type: string
       title: Body
+    element_date:
+      type: string
+      title: Date
