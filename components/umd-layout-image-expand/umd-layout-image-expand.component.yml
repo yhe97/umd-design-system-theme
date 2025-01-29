@@ -3,5 +3,25 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Image Expand
 props:
   type: object
-#   properties:
-# slots:
+  required:
+  - title
+  properties:
+    title:
+      type: string
+      title: Title
+    body:
+      type: string
+      title: Body Text
+    image:
+      type: string
+      title: Image
+    image_alt:
+      type: string
+      title: Image Alt Text
+  slots:
+    cta_slot:
+      title: Call to Action slot
+      description: Slot intended for CTA
+    quotes_slot:
+      title: Quotes slot
+      description: Slot intended for Quotes

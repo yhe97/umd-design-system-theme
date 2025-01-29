@@ -1,0 +1,16 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: UMD Feed News
+props:
+  type: object
+  required:
+  - categories
+  properties:
+    categories:
+      type: string
+      title: Feed Categories
+      description: Comma separated numerical categories from Maryland Today. E.g., '10662, 10671'
+    article_count:
+      type: string
+      title: Article Count
+      description: Number of articles to show. Numerical value.

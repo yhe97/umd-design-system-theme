@@ -20,10 +20,10 @@ props:
       type: string
       title: Use 'standard'
       description: Text related to CTA
-    element_theme:
+    theme:
       type: string
       title: Theme
-      description: Use 'light' or 'dark'
+      description: Use 'light', 'dark'
     action_type:
       type: string
       title: Action Type

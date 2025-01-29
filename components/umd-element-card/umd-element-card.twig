@@ -1,14 +1,32 @@
-<umd-element-card>
+<umd-element-card border="{{ border }}" aligned="{{ aligned }}" display="{{ display_type }}">
   <img slot="image" src="{{ card_image }}"
     alt="{{ card_image_alt }}" />
   <div slot="eyebrow">
     <p>{{ eyebrow }}</p>
   </div>
-  <div slot="headline">
-    <h3>
-      {{ headline }}
-    </h3>
-  </div>
+  {% if display_type == 'list' %}
+    <p slot="headline">
+      {% if headline_url %}
+        <a href="{{ headline_url }}">
+          {{ headline }}
+        </a>
+      {% else %}
+        {{ headline }}
+      {% endif %}
+    </p>
+  {% else %}
+    <div slot="headline">
+      <h3>
+        {% if headline_url %}
+          <a href="{{ headline_url }}">
+            {{ headline }}
+          </a>
+        {% else %}
+          {{ headline }}
+        {% endif %}
+      </h3>
+    </div>
+  {% endif %}
   <div slot="text">
     <p>
       {{ body }}

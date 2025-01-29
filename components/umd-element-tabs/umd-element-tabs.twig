@@ -1,48 +1,5 @@
 <umd-element-tabs resize>
-          <div slot="tabs">
-            <div data-title="Lorem Ipsum Dolor">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas porttitor quis odio eget tempus. Phasellus porta ligula
-                eu nisl scelerisque, vel imperdiet odio auctor. Donec dignissim risus augue, id varius urna tempus sed. Nam elementum neque
-                urna. 
-              </p>
-              
-            </div>
-            <div data-title="Master's Programs">
-              <h2 id="All-Master-s-Degrees-21205"
-                class="umd-sans-larger-bold umd-layout-headline-large">
-                All Master's Degrees
-              </h2>
-              <div class="umd-rich-text umd-sans-medium umd-layout-vertical-interior-child">
-                <p>
-                  The entire course of study undertaken for any master's degree
-                  must constitute a unified, coherent program that is approved
-                  by the student's advisor and graduate director and meets <a href="https://gradschool.umd.edu/"><strong>Graduate School</strong></a> requirements.
-                </p>
-              </div>
-              
-            </div>
-            <div data-title="Doctoral Programs">
-              <div class="content-wrapper">
-                <h2 id="Doctoral-Degree-Programs-21152"
-                  class="umd-sans-larger-bold umd-layout-headline-large">
-                  Doctoral Degree Programs
-                </h2>
-                <div class="umd-rich-text umd-sans-medium umd-layout-vertical-interior-child">
-                  <p>
-                    Doctoral degrees for Research and Scholarship programs
-                    (Ph.D. programs) require registration for a minimum of 12
-                    research credits; achieving admission to Candidacy; and a
-                    dissertation or its equivalent. Additional requirements may
-                    be set by Colleges or Programs. Doctoral degrees for
-                    Professional Practice programs (for example, Doctor of
-                    Clinical Audiology), have more detailed requirements. See
-                    the <a href="https://academiccatalog.umd.edu/graduate/policies/professional-practice-doctoral-degrees-policies/">
-                      <strong>Graduate Catalog</strong></a> for more information.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </umd-element-tabs>
+  <div slot="tabs">
+    {% block tabs_slot %}{% endblock %}
+  </div>
+</umd-element-tabs>

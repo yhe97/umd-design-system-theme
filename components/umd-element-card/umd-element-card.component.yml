@@ -22,9 +22,28 @@ props:
     headline:
       type: string
       title: Headline
+    headline_url:
+      type: string
+      title: Headline URL
     body:
       type: string
       title: Body
     element_date:
       type: string
       title: Date
+    border:
+      type: string
+      title: Border
+      description: Use 'true' or leave blank
+    aligned:
+      type: string
+      title: Is Aligned
+      description: Use 'true' or leave blank
+    display_type:
+      type: string
+      title: Display
+      description: Use 'list' or leave blank
+  slots:
+    cta_slot:
+      title: Call to Action slot
+      description: Slot intended for CTA
