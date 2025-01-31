@@ -1,15 +1,19 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Accordion 
+name: UMD Element Accordion
 props:
   type: object
   required:
-    - body
-    - headline 
+  - body
+  - headline
   properties:
     body:
       type: string
-      title: Body 
+      title: Body
     headline:
       type: string
       title: Headline
+    theme:
+      type: string
+      title: Theme
+      description: Use 'light', 'dark'

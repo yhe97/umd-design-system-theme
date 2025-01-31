@@ -1,14 +1,9 @@
-<umd-element-section-intro include-separator="">
+<umd-element-section-intro include-separator="{{ separator }}" theme="{{ theme }}">
   <h2 slot="headline">
-    FROM MARYLAND TODAY
+    {{ headline }}
   </h2>
   <h2 slot="text">
-    We are activating fearless ideas for transformational impact by
-    fostering research and industry partnerships, supporting small
-    businesses, and nurturing the growth of next generation technology
-    ventures.
+    {{ body }}
   </h2>
-  <umd-element-call-to-action type="secondary" slot="actions">
-    <a href="/"><span>See all election related content</span></a>
-  </umd-element-call-to-action>
+  {% block cta_slot %}{% endblock %}
 </umd-element-section-intro>

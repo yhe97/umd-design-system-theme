@@ -4,7 +4,7 @@ name: UMD Element Alert Page
 props:
   type: object
   required:
-    - body
+  - body
   properties:
     headline:
       type: string
@@ -12,9 +12,7 @@ props:
     body:
       type: string
       title: Body
-    cta:
-      type: string
-      title: Call to Action URL
-    cta_text:
-      type: string
-      title: CTA text
+  slots:
+    cta_slot:
+      title: Call to Action slot
+      description: Slot intended for CTA

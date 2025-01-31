@@ -11,12 +11,6 @@
     {{ main_text }} 
   </p>
   <div slot="actions">
-    {% if cta %}
-      <umd-element-call-to-action type="primary" theme="dark">
-        <a href="{{ cta }}" aria-label="{{ cta_aria_label }}">
-          <span aria-hidden="true">{{ cta_text }}</span>
-        </a>
-      </umd-element-call-to-action>
-    {% endif %}
+    {% block cta_slot %}{% endblock %}
   </div>
 </umd-element-hero>

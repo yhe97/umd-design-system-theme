@@ -6,28 +6,18 @@
     - {{ highlight_attrib }}
   </p>
   <p slot="eyebrow">
-    Optional Tagline
+    {{ eyebrow }}
   </p>
   <p slot="headline">
-    What does it take to change the world?
+    {{ headline }}
   </p>
   <div slot="text">
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-      ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat.
+      {{ body }}
     </p>
   </div>
   <div slot="actions">
-    <umd-element-call-to-action type="secondary">
-      <a href="/" aria-label="link to homepage">Home Link</a>
-    </umd-element-call-to-action>
-    <umd-element-call-to-action type="secondary">
-      <a href="/components" aria-label="link to components">
-        Components Link
-      </a>
-    </umd-element-call-to-action>
+    {% block cta_slot %}{% endblock %}
   </div>
 </umd-element-pathway-highlight>
 

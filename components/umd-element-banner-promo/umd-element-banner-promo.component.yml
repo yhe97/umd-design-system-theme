@@ -23,6 +23,10 @@ props:
       type: string
       title: Call to Action text
       description: Text related to CTA
+    theme:
+      type: string
+      title: Theme
+      description: Use 'light', 'dark'
   slots:
     cta_slot:
       title: Call to Action slot

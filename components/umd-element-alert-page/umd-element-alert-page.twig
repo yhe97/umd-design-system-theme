@@ -7,9 +7,5 @@
     {{ body }}
   </div>
 
-  {% if cta %}
-    <umd-element-call-to-action slot="actions" type="primary">
-      <a href="{{ cta }}"><span>{{ cta_text }}</span></a>
-    </umd-element-call-to-action>
-  {% endif %}
+  {% block cta_slot %}{% endblock %}
 </umd-element-alert-page>

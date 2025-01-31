@@ -4,36 +4,21 @@ name: UMD Element Hero
 props:
   type: object
   required:
-    - hero_alt
-    # - eyebrow
-    # - headline
-    # - main_text
-    # - hero_type
-    # - hero_theme
+  - hero_alt
+  - eyebrow
+  - headline
+  - main_text
+  - hero_type
+  - hero_theme
   properties:
     hero_type:
       type: string
       title: Hero Type
       description: "One of 'overlay', 'stacked', 'minimal'"
-      # The enum directive restricts the possible values in the element to our list.
-      # Note: currently disabled enums, because the value passed through to template
-      #   is the numerical key rather than the value.
-      # enum:
-      #   - 'overlay'
-      #   - 'stacked'
-      #   - 'minimal'
-      # default: 'minimal'
     hero_theme:
       type: string
-      title: Hero Theme 
+      title: Hero Theme
       description: "One of 'light', 'dark'"
-      # The enum directive restricts the possible values in the element to our list.
-      # Note: currently disabled enums, because the value passed through to template
-      #   is the numerical key rather than the value.
-      # enum:
-      #   - 'light'
-      #   - 'dark'
-      # default: 'light'
     hero_image:
       type: string
       title: Image
@@ -54,16 +39,7 @@ props:
       type: string
       title: Main text
       description: Main text and markup
-    cta:
-      type: string
-      title: Call to Action 
-      description: URL
-    cta_text:
-      type: string
-      title: Call to Action text
-      description: Text related to CTA
-    cta_aria_label:
-      type: string
-      title: CTA Aria Label
-      description: Arial label related to hero CTA
-# slots:
+  slots:
+    cta_slot:
+      title: Call to Action slot
+      description: Slot intended for CTA

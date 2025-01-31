@@ -3,6 +3,10 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Pathway Highlight
 props:
   type: object
+  required:
+  - highlight
+  - headline
+  - body
   properties:
     highlight:
       type: string
@@ -10,18 +14,12 @@ props:
     highlight_attrib:
       type: string
       title: Highlight Attribution
+    eyebrow:
+      type: string
+      title: Eyebrow
     headline:
       type: string
       title: Headline
-    start_date:
-      type: string
-      title: Start Date
-    end_date:
-      type: string
-      title: End Date
-    location:
-      type: string
-      title: location
     body:
       type: string
       title: Body Text
