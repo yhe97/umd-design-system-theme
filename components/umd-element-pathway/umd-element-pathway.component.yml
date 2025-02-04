@@ -6,7 +6,6 @@ props:
   required:
   - pathway_image
   - pathway_image_alt
-  - highlight
   - headline
   - body
   properties:

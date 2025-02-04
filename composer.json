@@ -1,0 +1,13 @@
+{
+    "name": "umd-lib/umd-design-system-theme",
+    "description": "Drupal base theme utilizing Single Directory Components and the UMD Design System.",
+    "type": "project",
+    "license": "Apache 2.0",
+    "authors": [
+        {
+            "name": "UMD Libraries"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

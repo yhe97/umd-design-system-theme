@@ -1,25 +1,19 @@
 <umd-layout-image-expand>
     <div slot="content">
-        
-  <div class="pl-md" style="max-width: 480px;">
-    <h2 class="umd-sans-largest-uppercase umd-adjacent-line-text text-white mb-md" style="color: white;">
-     Lorem ipsum dolor
-    </h2>
+      <div class="pl-md" style="max-width: 480px;">
+        <h2 class="umd-sans-largest-uppercase umd-adjacent-line-text text-white mb-md" style="color: white;">
+          {{ title }}
+        </h2>
 
-    <div class="umd-rich-text-dark mb-md">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi velit
-        odio, pretium vitae egestas semper, congue sit amet ligula. Nam sed eros
-        vel nibh pharetra sollicitudin non vel diam.
-      </p>
+      <div class="umd-rich-text-dark mb-md">
+        <p>
+          {{ body }}
+        </p>
+      </div>
+
+      {% block quotes_slot %}{% endblock %}
+      {% block cta_slot %}{% endblock %}
     </div>
-
-    <umd-element-call-to-action type="primary" theme="light">
-      <a href="/"><span>Example CTA Title</span></a>
-    </umd-element-call-to-action>
   </div>
-
-    </div>
-
-    <img slot="image" src="https://brandportal.umd.edu/m/aff37039c70c5e0/Original_medium-FirstDayofClasses_01242024_RS_9436_DAM-jpg.jpg" alt="Students seated at small tables">
-  </umd-layout-image-expand>
+  <img slot="image" src="{{ image }}" alt="{{ image_alt }}">
+</umd-layout-image-expand>
