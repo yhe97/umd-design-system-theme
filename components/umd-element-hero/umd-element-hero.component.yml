@@ -3,13 +3,6 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Hero
 props:
   type: object
-  required:
-  - hero_alt
-  - eyebrow
-  - headline
-  - main_text
-  - hero_type
-  - hero_theme
   properties:
     hero_type:
       type: string

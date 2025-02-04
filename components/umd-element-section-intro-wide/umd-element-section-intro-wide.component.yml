@@ -3,8 +3,6 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Intro Wide
 props:
   type: object
-  required:
-  - headline
   properties:
     headline:
       type: string
@@ -13,7 +11,6 @@ props:
       type: string
       title: Theme
       description: Use 'light', 'dark'
-
   slots:
     cta_slot:
       title: Call to Action slot

@@ -3,8 +3,6 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Stat
 props:
   type: object
-  required:
-  - stat
   properties:
     stat:
       type: string

@@ -3,8 +3,6 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Feed News
 props:
   type: object
-  required:
-  - categories
   properties:
     categories:
       type: string

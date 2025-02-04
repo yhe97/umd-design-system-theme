@@ -3,11 +3,6 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Bio
 props:
   type: object
-  required:
-  - photo
-  - photo_alt
-  - person_name
-  - body
   properties:
     photo:
       type: string

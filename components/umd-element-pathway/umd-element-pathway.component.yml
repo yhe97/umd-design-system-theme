@@ -3,11 +3,6 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Pathway
 props:
   type: object
-  required:
-  - pathway_image
-  - pathway_image_alt
-  - headline
-  - body
   properties:
     pathway_image:
       type: string

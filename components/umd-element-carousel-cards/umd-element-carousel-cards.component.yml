@@ -3,11 +3,6 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Carousel Cards
 props:
   type: object
-  required:
-  - headline
-  - headline_url
-  - headline_sr_text
-  - body
   properties:
     headline:
       type: string

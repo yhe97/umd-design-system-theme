@@ -3,12 +3,6 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Person
 props:
   type: object
-  #   properties:
-  # slots:
-  required:
-  - photo
-  - photo_alt
-  - person_name
   properties:
     photo:
       type: string

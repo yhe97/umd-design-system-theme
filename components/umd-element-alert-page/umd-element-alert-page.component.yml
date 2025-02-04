@@ -3,8 +3,6 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: UMD Element Alert Page
 props:
   type: object
-  required:
-  - body
   properties:
     headline:
       type: string
