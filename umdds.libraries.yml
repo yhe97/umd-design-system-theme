@@ -1,7 +1,7 @@
-tailwind:
-  version: VERSION
+design-system:
+  header: true
   css:
-    component:
-      dist/index.css: { }
+    theme:
+      css/compiled.css: {}
   js:
-    js/init.js: { attributes: { type: module }}
+    js/index.js: {}

@@ -3,6 +3,12 @@ type: theme
 'base theme': stable9
 version: 1.0.0
 libraries:
-  - core/normalize
+- umdds/design-system
+- core/normalize
 description: ''
 core_version_requirement: ^11
+regions:
+  content: Content
+  header: Header
+  highlighted: Highlighted
+  help: Help
