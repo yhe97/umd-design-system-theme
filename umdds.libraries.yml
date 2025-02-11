@@ -2,6 +2,10 @@ design-system:
   header: true
   css:
     theme:
-      css/compiled.css: {}
+      css/design-system/compiled.css: {}
   js:
-    js/index.js: {}
+    js/design-system/index.js: {}
+ui:
+  css:
+    theme:
+      css/base/ui.css: {}

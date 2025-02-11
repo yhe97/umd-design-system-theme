@@ -4,6 +4,7 @@ type: theme
 version: 1.0.0
 libraries:
 - umdds/design-system
+- umdds/ui
 - core/normalize
 description: ''
 core_version_requirement: ^11

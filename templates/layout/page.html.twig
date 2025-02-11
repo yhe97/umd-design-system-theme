@@ -51,7 +51,11 @@
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-  {{ page.highlighted }}
+    {% if page.highlighted %}
+      <div class="highlighted-ui">
+        {{ page.highlighted }}
+      </div>
+    {% endif %}
 
     <div class="layout-content">
       {{ page.content }}
