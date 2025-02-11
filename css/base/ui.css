@@ -23,6 +23,8 @@
 .messages__wrapper {
     border-bottom: 1px solid #ddd;
     display: flex;
+    background-color: black;
+    color: white;
 }
 
 .messages__wrapper .messages {

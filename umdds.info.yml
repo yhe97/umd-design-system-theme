@@ -5,11 +5,12 @@ version: 1.0.0
 libraries:
 - umdds/design-system
 - umdds/ui
+- umdds/layout
 - core/normalize
 description: ''
 core_version_requirement: ^11
 regions:
-  content: Content
-  header: Header
   highlighted: Highlighted
-  help: Help
+  header: Header
+  content: Content
+  footer: Footer

@@ -9,3 +9,7 @@ ui:
   css:
     theme:
       css/base/ui.css: {}
+layout:
+  css:
+    theme:
+      css/base/layout.css: {}
