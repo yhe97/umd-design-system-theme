@@ -1,0 +1,32 @@
+.highlighted-ui {
+    box-shadow: -1px 0 3px 1px rgba(0, 0, 0, .333);
+    background-color: #e2183310;
+}
+
+.highlighted-ui ul {
+    display: flex;
+}
+
+.highlighted-ui li {
+    padding: 10px 20px;
+    border-right: 1px solid #ddd;
+}
+
+.highlighted-ui li a {
+    text-decoration: none;
+}
+
+.highlighted-ui li a:hover {
+    text-decoration: underline;
+}
+
+.messages__wrapper {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+.messages__wrapper .messages {
+  padding: 5px 10px;
+}

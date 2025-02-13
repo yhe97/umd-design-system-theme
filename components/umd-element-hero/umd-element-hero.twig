@@ -1,15 +1,23 @@
 <umd-element-hero type="{{ hero_type }}" theme="{{ hero_theme }}">
-  <img slot="image" src="{{ hero_image }}"
-    alt="{{ hero_alt }}" />
-  <p slot="eyebrow">
-    {{ eyebrow }} {{ hero_type }} 
-  </p>
-  <p slot="headline">
-    {{ headline }} 
-  </p>
-  <p slot="text">
-    {{ main_text }} 
-  </p>
+  {% if hero_image %}
+    <img slot="image" src="{{ hero_image }}"
+      alt="{{ hero_alt }}" />
+  {% endif %}
+  {% if eyebrow %}
+    <p slot="eyebrow">
+      {{ eyebrow }}
+    </p>
+  {% endif %}
+  {% if headline %}
+    <p slot="headline">
+      {{ headline }} 
+    </p>
+  {% endif %}
+  {% if main_text %}
+    <p slot="text">
+      {{ main_text }} 
+    </p>
+  {% endif %}
   <div slot="actions">
     {% block cta_slot %}{% endblock %}
   </div>

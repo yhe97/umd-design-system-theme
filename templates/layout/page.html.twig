@@ -44,18 +44,30 @@
 #}
 <div class="layout-container">
 
-  {{ page.header }}
-
-  {{ page.help }}
-
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-  {{ page.highlighted }}
+    {% if page.highlighted %}
+      <div class="highlighted-ui">
+        {{ page.highlighted }}
+      </div>
+    {% endif %}
+
+    {% if page.header %}
+      <div class="layout-header">
+        {{ page.header }}
+      </div>
+    {% endif %}
 
     <div class="layout-content">
       {{ page.content }}
-    </div>{# /.layout-content #}
+    </div>
+
+    {% if page.footer %}
+      <div class="layout-footer">
+        {{ page.footer }}
+      </div>
+    {% endif %}
 
   </main>
 
