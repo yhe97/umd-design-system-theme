@@ -9,6 +9,7 @@ libraries:
 - core/normalize
 description: ''
 core_version_requirement: ^11
+logo: logo.svg
 regions:
   highlighted: Highlighted
   header: Header
