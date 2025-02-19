@@ -1,9 +1,5 @@
-<umd-element-breadcrumb>
-  <div slot="paths">
-    <a href="">Home</a>
-    <a href="">Primary Link</a>
-    <a href="">Secondary Link</a>
-    <a href="">Tertiary Link</a>
-    <a href="">Current Page</a>
-  </div>
-</umd-element-breadcrumb>
+  <umd-element-breadcrumb>
+    <div slot="paths">
+      {% block breadcrumbs_slot %}<a href="/">Home</a>{% endblock %}
+    </div>
+  </umd-element-breadcrumb>

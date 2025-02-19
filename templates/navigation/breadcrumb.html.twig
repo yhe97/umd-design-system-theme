@@ -8,8 +8,8 @@
  */
 #}
 {% if breadcrumb %}
-  <umd-element-breadcrumb>
-    <div slot="paths">
+  {% embed 'umdds:umd-element-breadcrumb' %} 
+    {% block breadcrumbs_slot %}
       {% for item in breadcrumb %}
         {% if item.url %}
           <a href="{{ item.url }}">{{ item.text }}</a>
@@ -17,6 +17,6 @@
           {{ item.text }}
         {% endif %}
       {% endfor %}
-    </div>
-  </umd-element-breadcrumb>
+    {% endblock %} 
+  {% endembed %}
 {% endif %}

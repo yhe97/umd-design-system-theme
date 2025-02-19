@@ -1,7 +1,7 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
 name: UMD Element Breadcrumb
-props:
-  type: object
-#   properties:
-# slots:
+slots:
+  breadcrumbs_slot:
+    title: Breadcrumb Links slot
+    description: Only intended to be used in breadcrumb template
