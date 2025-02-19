@@ -18,7 +18,7 @@
     </h2>
 
     <div slot="text">
-      {{ body }}
+      {% block body_slot %}{% endblock %}
     </div>
 
     {% if element_date %}

@@ -8,23 +8,14 @@ props:
       type: string
       title: Headline
       description: The accordion element title
-    body:
-      type: string
-      title: Body
-      description: Accordion body
-    cta:
-      type: string
-      title: Call to Action
-      description: URL
-    cta_text:
-      type: string
-      title: Call to Action text
-      description: Text related to CTA
     theme:
       type: string
       title: Theme
       description: Use 'light', 'dark'
-  slots:
-    cta_slot:
-      title: Call to Action slot
-      description: Slot intended for CTA
+slots:
+  cta_slot:
+    title: Call to Action slot
+    description: Slot intended for CTA
+  body_slot:
+    title: Body
+    description: Slot intended for WYSIWYG editor content

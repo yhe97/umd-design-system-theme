@@ -29,9 +29,10 @@ props:
       type: string
       title: Telephone
       description: Numbers only. No dashes, dots, etc.
-    body:
-      type: string
-      title: Bio Text
     email:
       type: string
       title: Email Address
+slots:
+  body_slot:
+    title: Body
+    description: Slot intended for WYSIWYG editor content

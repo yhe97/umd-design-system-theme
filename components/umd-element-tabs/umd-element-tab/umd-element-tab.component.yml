@@ -10,6 +10,7 @@ props:
     tab_heading:
       type: string
       title: Tab Heading
-    body:
-      type: string
-      title: Stat Description
+slots:
+  body_slot:
+    title: Body
+    description: Slot intended for WYSIWYG editor content

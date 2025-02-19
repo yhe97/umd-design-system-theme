@@ -1,0 +1,22 @@
+<umd-element-navigation-utility
+    data-layout-lock="{{ layout }}"
+    {% if alert_off %}
+        data-alert-off="{{ alert_off }}"
+    {% endif %}
+    {% if show_news %}
+        data-news="{{ show_news }}"
+    {% endif %}
+    {% if show_admissions %}
+        data-admissions="{{ show_admissions }}"
+    {% endif %}
+    {% if show_events %}
+        data-events="{{ show_events }}"
+    {% endif %}
+    {% if show_gift %}
+        data-gift="{{ gift_url }}"
+    {% endif %}
+    {% if show_search %}
+        data-search="{{ search_url }}"
+    {% endif %}
+    >
+</umd-element-navigation-utility>

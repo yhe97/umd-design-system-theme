@@ -1,7 +1,7 @@
 <umd-element-quote>
-  <p slot="quote">
-    {{ body }}
-  </p>
+  <div slot="quote">
+    {% block body_slot %}{% endblock %}
+  </div>
   {% if attribution %}
     <p slot="attribution">
       {{ attribution }}

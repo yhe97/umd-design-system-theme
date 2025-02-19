@@ -1,0 +1,42 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: UMD Element Navigation Utility
+props:
+  type: object
+  properties:
+    alert_off:
+      type: string
+      title: Alert Off
+      description: Use 'true' or leave empty
+    layout:
+      type: string
+      title: Layout
+      description: Use 'full' or leave empty
+    show_news:
+      type: string
+      title: Show News Link
+      description: Use 'true' or leave empty
+    show_admissions:
+      type: string
+      title: Show Admissions Link
+      description: Use 'true' or leave empty
+    show_events:
+      type: string
+      title: Show Events Link
+      description: Use 'true' or leave empty
+    show_gift:
+      type: string
+      title: Show Gift Link
+      description: Use 'true' or leave empty
+    gift_url:
+      type: string
+      title: Gift URL
+      description: Enter URL or leave blank
+    show_search:
+      type: string
+      title: Show Search
+      description: Use 'true' or leave empty
+    search_url:
+      type: string
+      title: Search URL
+      description: Enter URL or leave blank

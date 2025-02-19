@@ -4,7 +4,7 @@
   </h2>
 
   <div slot="body" class="umd-rich-text">
-    {{ body }}
+    {% block body_slot %}{% endblock %}
   </div>
 
   {% block cta_slot %}{% endblock %}

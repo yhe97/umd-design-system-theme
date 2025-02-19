@@ -19,9 +19,6 @@ props:
     headline_url:
       type: string
       title: Headline URL
-    body:
-      type: string
-      title: Body
     element_date:
       type: string
       title: Date
@@ -37,7 +34,10 @@ props:
       type: string
       title: Display
       description: Use 'list' or leave blank
-  slots:
-    cta_slot:
-      title: Call to Action slot
-      description: Slot intended for CTA
+slots:
+  cta_slot:
+    title: Call to Action slot
+    description: Slot intended for CTA
+  body_slot:
+    title: Body
+    description: Slot intended for WYSIWYG editor content

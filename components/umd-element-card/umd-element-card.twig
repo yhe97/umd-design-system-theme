@@ -28,9 +28,7 @@
     </div>
   {% endif %}
   <div slot="text">
-    <p>
-      {{ body }}
-    </p>
+    {% block body_slot %}{% endblock %}
   </div>
   {% if element_date %}
     <div slot="date">

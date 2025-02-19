@@ -4,9 +4,6 @@ name: UMD Element Section Intro
 props:
   type: object
   properties:
-    body:
-      type: string
-      title: Body
     headline:
       type: string
       title: Headline
@@ -17,7 +14,10 @@ props:
       type: string
       title: Theme
       description: Use 'light', 'dark'
-  slots:
-    cta_slot:
-      title: Call to Action slot
-      description: Slot intended for CTA
+slots:
+  cta_slot:
+    title: Call to Action slot
+    description: Slot intended for CTA
+  body_slot:
+    title: Body
+    description: Slot intended for WYSIWYG editor content

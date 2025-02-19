@@ -3,7 +3,7 @@
     {{ headline }}
   </h2>
   <h2 slot="text">
-    {{ body }}
+    {% block body_slot %}{% endblock %}
   </h2>
   {% block cta_slot %}{% endblock %}
 </umd-element-section-intro>

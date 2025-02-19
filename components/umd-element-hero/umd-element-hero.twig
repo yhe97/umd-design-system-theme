@@ -15,7 +15,7 @@
   {% endif %}
   {% if main_text %}
     <p slot="text">
-      {{ main_text }} 
+      {% block body_slot %}{% endblock %}
     </p>
   {% endif %}
   <div slot="actions">

@@ -16,10 +16,13 @@ props:
     image_alt:
       type: string
       title: Image Alt Text
-  slots:
-    cta_slot:
-      title: Call to Action slot
-      description: Slot intended for CTA
-    quotes_slot:
-      title: Quotes slot
-      description: Slot intended for Quotes
+slots:
+  cta_slot:
+    title: Call to Action slot
+    description: Slot intended for CTA
+  quotes_slot:
+    title: Quotes slot
+    description: Slot intended for Quotes
+  body_slot:
+    title: Body
+    description: Slot intended for WYSIWYG editor content

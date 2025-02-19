@@ -4,9 +4,6 @@ name: UMD Element Accordion
 props:
   type: object
   properties:
-    body:
-      type: string
-      title: Body
     headline:
       type: string
       title: Headline
@@ -14,3 +11,7 @@ props:
       type: string
       title: Theme
       description: Use 'light', 'dark'
+slots:
+  body_slot:
+    title: Body
+    description: Slot intended for WYSIWYG editor content

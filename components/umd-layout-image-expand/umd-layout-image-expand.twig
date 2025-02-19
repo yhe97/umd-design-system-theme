@@ -6,9 +6,7 @@
         </h2>
 
       <div class="umd-rich-text-dark mb-md">
-        <p>
-          {{ body }}
-        </p>
+       {% block body_slot %}{% endblock %}
       </div>
 
       {% block quotes_slot %}{% endblock %}

@@ -1,0 +1,61 @@
+<umd-element-navigation-header role="navigation" search-url="{{ header_search_url }}">
+  {% if header_image_link %}
+    <a href="{{ header_image_link }}" slot="logo">
+      {% if header_image %}
+        <img
+          src="{{ header_image }}"
+          alt="{{ header_image_alt }}"
+        />
+      {% else %}
+        {{ header_image_alt }}
+      {% endif %}
+    </a>
+  {% endif %}
+
+    {% block slide_menu_slot %}
+      <div slot="primary-slide-links">
+        <a href="https://google.com" data-child-ref="slide-1">
+          <span>About</span>
+        </a>
+        <a href="https://google.com" data-child-ref="slide-2">
+          <span>Academics</span>
+        </a>
+        <a href="https://google.com" data-child-ref="slide-3">
+          <span>Admissions</span>
+        </a>
+      </div>
+  
+      <div slot="children-slides">
+        <div data-parent-ref="slide-1">
+          <a href="https://docs.google.com/" data-child-ref="doc-slide-1">
+            <span>History & Traditions</span>
+          </a>
+        </div>
+        <div data-parent-ref="slide-2">
+          <a href="https://docs.google.com/" data-child-ref="doc-slide-2">
+            <span>Academic Programs</span>
+          </a>
+        </div>
+      </div>
+    {% endblock %}
+
+    {% block main_navigation_slot %}
+      <div slot="main-navigation">
+        <umd-element-nav-item>
+          <a href="/" slot="primary-link"><span>About</span></a>
+          <div slot="dropdown-links">
+            <a href="https://google.com"><span>History & Traditions</span></a>
+          </div>
+        </umd-element-nav-item>
+        <umd-element-nav-item>
+          <a href="/" slot="primary-link"><span>Academics</span></a>
+            <div slot="dropdown-links">
+              <a href="https://google.com"><span>Academic Programs</span></a>
+            </div>
+        </umd-element-nav-item>
+        <umd-element-nav-item>
+          <a href="/" slot="primary-link"><span>Admissions</span></a>
+        </umd-element-nav-item>
+      </div>
+    {% endblock %}
+</umd-element-navigation-header>

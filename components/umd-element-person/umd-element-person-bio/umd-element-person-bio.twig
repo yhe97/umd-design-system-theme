@@ -19,7 +19,7 @@
   {% endif %}
   {% if pronouns %}
     <p slot="pronouns">
-      he/him/his
+      {{ pronouns }}
     </p>
   {% endif %}
   {% if telephone %}
@@ -32,6 +32,6 @@
     {% block cta_slot %}{% endblock %}
   </p>
   <div class="umd-rich-text" slot="description">
-    {{ body }}
+    {% block body_slot %}{% endblock %}
   </div>
 </umd-element-person-bio>

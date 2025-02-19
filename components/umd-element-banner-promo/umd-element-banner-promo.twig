@@ -4,7 +4,7 @@
   </p>
 
   <div slot="text" class="umd-rich-text">
-    {{ body }}
+    {% block body_slot %}{% endblock %}
   </div>
 
   {% if cta %}

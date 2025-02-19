@@ -2,7 +2,7 @@
   <div slot="headline">
     {{ headline }}
   </div>
-  <p slot="body">
-    {{ body }}
-  </p>
+  <div slot="body">
+    {% block body_slot %}{% endblock %}
+  </div>
 </umd-element-accordion-item>

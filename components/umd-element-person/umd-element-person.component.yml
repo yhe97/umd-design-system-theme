@@ -19,7 +19,7 @@ props:
     email:
       type: string
       title: Email Address
-  slots:
-    cta_slot:
-      title: Call to Action slot
-      description: Slot intended for CTA
+slots:
+  cta_slot:
+    title: Call to Action slot
+    description: Slot intended for CTA

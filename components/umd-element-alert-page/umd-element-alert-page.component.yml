@@ -7,10 +7,10 @@ props:
     headline:
       type: string
       title: Headline
-    body:
-      type: string
-      title: Body
-  slots:
-    cta_slot:
-      title: Call to Action slot
-      description: Slot intended for CTA
+slots:
+  cta_slot:
+    title: Call to Action slot
+    description: Slot intended for CTA
+  body_slot:
+    title: Body
+    description: Slot intended for WYSIWYG editor content

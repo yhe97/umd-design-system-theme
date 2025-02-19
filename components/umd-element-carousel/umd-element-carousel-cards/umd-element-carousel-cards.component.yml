@@ -13,13 +13,13 @@ props:
     headline_sr_text:
       type: string
       title: Headline Screen Reader Text
-    body:
-      type: string
-      title: Body Text
-  slots:
-    cta_slot:
-      title: Call to Action slot
-      description: Slot intended for CTA
-    cards_slot:
-      title: Cards slots
-      description: Slot intended for overlay cards
+slots:
+  cta_slot:
+    title: Call to Action slot
+    description: Slot intended for CTA
+  cards_slot:
+    title: Cards slots
+    description: Slot intended for overlay cards
+  body_slot:
+    title: Body
+    description: Slot intended for WYSIWYG editor content

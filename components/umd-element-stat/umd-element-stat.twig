@@ -3,7 +3,7 @@
     {{ stat }}
   </div>
   <div slot="text">
-    {{ body }}
+    {% block body_slot %}{% endblock %}
   </div>
   {% if subtext %}
     <div slot="sub-text">

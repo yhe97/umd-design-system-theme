@@ -12,9 +12,7 @@
     {{ headline }}
   </p>
   <div slot="text">
-    <p>
-      {{ body }}
-    </p>
+    {% block body_slot %}{% endblock %}
   </div>
   <div slot="actions">
     {% block cta_slot %}{% endblock %}

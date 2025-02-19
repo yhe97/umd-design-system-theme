@@ -19,14 +19,14 @@ props:
     eyebrow:
       type: string
       title: Eyebrow
-    body:
-      type: string
-      title: Body Text
     pathway_type:
       type: string
       title: Pathway Type
       description: Use 'sticky', 'standard'
-  slots:
-    cta_slot:
-      title: Call to Action slot
-      description: Slot intended for CTA
+slots:
+  cta_slot:
+    title: Call to Action slot
+    description: Slot intended for CTA
+  body_slot:
+    title: Body
+    description: Slot intended for WYSIWYG editor content
