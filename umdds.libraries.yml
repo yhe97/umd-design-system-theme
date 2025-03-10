@@ -13,3 +13,7 @@ layout:
   css:
     theme:
       css/base/layout.css: {}
+admin:
+  css:
+    theme:
+      css/base/admin.css: {}
