@@ -63,6 +63,14 @@ form.layout-builder-form
 form.layout-builder-form
   div.layout-builder__message
   div[aria-label="Status message"]
+  a {
+  margin: 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+form.layout-builder-form
+  div.layout-builder__message
+  div[aria-label="Status message"]
   > * {
   margin: 1rem 0;
   font-size: 1rem;
@@ -128,6 +136,8 @@ form.layout-builder-form
 
   input {
     width: fit-content;
+
+    cursor: pointer;
   }
 
   label {
@@ -142,6 +152,20 @@ form.layout-builder-form
 form.layout-builder-form div.form-item .vertical-tabs {
   display: flex;
   align-items: center;
+
+  border: 1px solid #bdbfc8;
+  border-radius: 0 0.25rem 0.25rem 0;
+  background-color: #ffffff;
+}
+
+form.layout-builder-form div.form-item .vertical-tabs__menu {
+  border-top: none;
+}
+
+form.layout-builder-form div.form-item .vertical-tabs__menu-item {
+  border: 1px solid #bdbfc8;
+  border-radius: 0.25rem 0 0 0.25rem;
+  background-color: #f8f9fc;
 }
 
 form.layout-builder-form div.form-item .vertical-tabs__menu-item a {
@@ -151,7 +175,8 @@ form.layout-builder-form div.form-item .vertical-tabs__menu-item a {
 form.layout-builder-form div.form-item .vertical-tabs__menu-item a:hover,
 form.layout-builder-form div.form-item .vertical-tabs__menu-item a:focus,
 form.layout-builder-form div.form-item .vertical-tabs__menu-item a:active {
-  outline: 1px solid #ffd200;
+  /* outline: 1px solid #ffd200; */
+  outline: none;
   color: #e21833;
 }
 
@@ -298,6 +323,8 @@ form.layout-builder-discard-changes div[data-drupal-selector="edit-actions"] a {
   border: 1px solid black;
 
   transition: all 0.1s ease-in;
+
+  cursor: pointer;
 }
 
 form.layout-builder-revert-overrides
