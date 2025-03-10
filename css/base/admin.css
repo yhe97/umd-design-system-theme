@@ -193,6 +193,15 @@ div.layout-builder__section a.layout-builder__link:active {
   color: #e21833;
 }
 
+div.layout-builder__section
+  div.layout-builder__add-block.is-layout-builder-highlighted,
+div.layout-builder__add-section.is-layout-builder-highlighted,
+div.layout-builder__layout.is-layout-builder-highlighted::before,
+div.layout-builder__layout.is-layout-builder-highlighted,
+div.layout-builder-block.is-layout-builder-highlighted {
+  border: 2px solid #ffd200;
+}
+
 div.layout-builder__section .ui-state-drop {
   padding: 1rem;
 
@@ -218,6 +227,14 @@ div.layout-builder__section .layout-builder__region .contextual-region {
   margin: 0.5rem;
   border: 1px solid #bdbfc8;
   border-radius: 0.5rem;
+}
+
+div.layout-builder__section
+  .layout-builder__region
+  .contextual-region
+  .layout-builder-block__content-preview-placeholder-label {
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 div.layout-builder__section .layout-builder__region .contextual-region.focus {
