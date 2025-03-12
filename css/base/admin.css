@@ -241,11 +241,15 @@ div.layout-builder__section a.layout-builder__link {
   font-weight: 700;
 }
 
-div.layout-builder__section .layout-builder__region {
+div.layout-builder__section div.layout-builder__layout.layout {
   outline: none;
   border: 1px solid #bdbfc8;
   border-radius: 0.25rem;
   background-color: #e9eaef;
+}
+
+div.layout-builder__section .layout-builder__region {
+  outline: none;
 }
 
 div.layout-builder__section .layout-builder__region .contextual-region {

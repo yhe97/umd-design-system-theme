@@ -7,6 +7,10 @@
   display: flex;
 }
 
+.highlighted-ui ul[hidden] {
+  display: none;
+}
+
 .highlighted-ui li {
   padding: 10px 20px;
   border-right: 1px solid #ddd;
