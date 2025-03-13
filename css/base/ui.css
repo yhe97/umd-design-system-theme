@@ -26,10 +26,14 @@
 }
 
 .messages__wrapper {
-  border-bottom: 1px solid #ddd;
+  padding: 0.5rem;
+
   display: flex;
-  background-color: black;
+  flex-direction: column;
+
   color: white;
+  background-color: black;
+  border-bottom: 1px solid #ddd;
 }
 
 .messages__wrapper a {
