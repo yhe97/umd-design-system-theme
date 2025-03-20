@@ -371,3 +371,21 @@ form.layout-builder-discard-changes
   background-color: #e21833;
   border: 1px solid #e21822;
 }
+
+/* umdlib custom layout */
+.umd-lib-layout.layout--custom > div {
+  flex-grow: 1;
+}
+
+.umd-lib-layout.layout--custom div.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.umd-lib-layout.layout--custom div.row > div {
+  flex-grow: 1;
+}
+
+.umd-lib-layout.layout--custom div.row > div.column--0 {
+  display: none;
+}
