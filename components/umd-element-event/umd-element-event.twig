@@ -25,7 +25,5 @@
   <div slot="location">
     Optional Location
   </div>
-  <umd-element-call-to-action slot="actions" type="secondary" theme="light">
-    <a href="/"><span>Learn More</span></a>
-  </umd-element-call-to-action>
+  {% block cta_slot %}{% endblock %}
 </umd-element-event>

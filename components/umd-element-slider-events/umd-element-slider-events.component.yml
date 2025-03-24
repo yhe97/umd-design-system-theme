@@ -1,6 +1,6 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Slider Events
+name: UMD Slider Events
 props:
   type: object
   properties:
@@ -13,8 +13,8 @@ props:
       description: Use 'light', 'dark'
   slots:
     dates_slot:
-      title: Dates
+      title: Dates (UMD Events Date)
       description: Slot intended for Events Dates
     cta_slot:
-      title: Call to Action slot
+      title: Call to Action (UMD CTA)
       description: Slot intended for CTA

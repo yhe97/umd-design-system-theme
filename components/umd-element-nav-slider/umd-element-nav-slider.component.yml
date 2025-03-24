@@ -1,7 +1,8 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Nav Slider
+name: UMD Nav Slider
 props:
   type: object
+
 #   properties:
 # slots:

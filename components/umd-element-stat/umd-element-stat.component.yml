@@ -1,6 +1,6 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Stat
+name: UMD Stat
 props:
   type: object
   properties:
@@ -14,5 +14,5 @@ props:
       description: For example, use for attribution
 slots:
   body_slot:
-    title: Body
+    title: Body (WYSIWYG)
     description: Slot intended for WYSIWYG editor content

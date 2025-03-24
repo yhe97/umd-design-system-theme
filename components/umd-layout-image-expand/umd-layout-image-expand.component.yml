@@ -1,6 +1,6 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Image Expand
+name: UMD Image Expand
 props:
   type: object
   properties:
@@ -18,11 +18,11 @@ props:
       title: Image Alt Text
 slots:
   cta_slot:
-    title: Call to Action slot
+    title: Call to Action (UMD CTA)
     description: Slot intended for CTA
   quotes_slot:
-    title: Quotes slot
+    title: Quotes (UMD Quote)
     description: Slot intended for Quotes
   body_slot:
-    title: Body
+    title: Body (WYSIWYG)
     description: Slot intended for WYSIWYG editor content

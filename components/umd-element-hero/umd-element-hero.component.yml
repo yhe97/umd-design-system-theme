@@ -1,6 +1,6 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Hero
+name: UMD Hero
 props:
   type: object
   properties:
@@ -30,8 +30,8 @@ props:
       description: Headline content
 slots:
   cta_slot:
-    title: Call to Action slot
-    description: Slot intended for CTA
+    title: Call to Action (UMD CTA)
+    description: Slot intended for CTA Component
   body_slot:
-    title: Body
+    title: Body (WYSIWYG)
     description: Slot intended for WYSIWYG editor content

@@ -1,6 +1,6 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Tab
+name: UMD Tab
 props:
   type: object
   properties:
@@ -12,5 +12,5 @@ props:
       title: Tab Heading
 slots:
   body_slot:
-    title: Body
+    title: Body (WYSIWYG)
     description: Slot intended for WYSIWYG editor content

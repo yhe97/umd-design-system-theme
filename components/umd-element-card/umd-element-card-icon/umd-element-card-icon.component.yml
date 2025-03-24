@@ -1,7 +1,7 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Card Icon
+name: UMD Card Icon
 slots:
   body_slot:
-    title: Body
+    title: Body (WYSIWYG)
     description: Slot intended for WYSIWYG editor content

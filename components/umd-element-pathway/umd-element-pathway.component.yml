@@ -1,6 +1,6 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Pathway
+name: UMD Pathway
 props:
   type: object
   properties:
@@ -25,8 +25,8 @@ props:
       description: Use 'sticky', 'standard'
 slots:
   cta_slot:
-    title: Call to Action slot
+    title: Call to Action (UMD CTA)
     description: Slot intended for CTA
   body_slot:
-    title: Body
+    title: Body (WYSIWYG)
     description: Slot intended for WYSIWYG editor content

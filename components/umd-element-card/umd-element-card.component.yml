@@ -1,6 +1,6 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Card
+name: UMD Card
 props:
   type: object
   properties:
@@ -36,8 +36,8 @@ props:
       description: Use 'list' or leave blank
 slots:
   cta_slot:
-    title: Call to Action slot
+    title: Call to Action (UMD CTA)
     description: Slot intended for CTA
   body_slot:
-    title: Body
+    title: Body (WYSIWYG)
     description: Slot intended for WYSIWYG editor content

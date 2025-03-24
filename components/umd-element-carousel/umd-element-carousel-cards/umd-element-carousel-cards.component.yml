@@ -1,6 +1,6 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Carousel Cards
+name: UMD Carousel Cards
 props:
   type: object
   properties:
@@ -15,11 +15,11 @@ props:
       title: Headline Screen Reader Text
 slots:
   cta_slot:
-    title: Call to Action slot
+    title: Call to Action (UMD CTA)
     description: Slot intended for CTA
   cards_slot:
-    title: Cards slots
+    title: Card (UMD Card)
     description: Slot intended for overlay cards
   body_slot:
-    title: Body
+    title: Body (WYSIWYG)
     description: Slot intended for WYSIWYG editor content

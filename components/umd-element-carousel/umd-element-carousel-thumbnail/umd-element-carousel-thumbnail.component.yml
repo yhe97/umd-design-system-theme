@@ -1,7 +1,7 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Carousel Thumbnail
+name: UMD Carousel Thumbnail
 slots:
   cards_slot:
-    title: Cards slots
+    title: Card (UMD Card)
     description: Slot intended for basic cards

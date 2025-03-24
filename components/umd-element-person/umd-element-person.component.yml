@@ -1,6 +1,6 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Element Person
+name: UMD Person
 props:
   type: object
   properties:
@@ -21,5 +21,5 @@ props:
       title: Email Address
 slots:
   cta_slot:
-    title: Call to Action slot
+    title: Call to Action (UMD CTA)
     description: Slot intended for CTA
