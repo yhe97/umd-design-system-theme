@@ -1,46 +1,28 @@
-.highlighted-ui {
-  box-shadow: -1px 0 3px 1px rgba(0, 0, 0, 0.333);
-  background-color: #fff9d5;
+/* UMDDS accessibility - skip to main content link  */
+.umd-skip-content {
+  clip: rect(0, 0, 0, 0);
+  border-width: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
 }
 
-.highlighted-ui ul {
-  display: flex;
-}
+.umd-skip-content:focus {
+  width: fit-content;
+  height: fit-content;
 
-.highlighted-ui ul[hidden] {
-  display: none;
-}
+  top: 0;
+  background-color: var(--white);
+  outline: 2px solid var(--maryland-yellow);
 
-.highlighted-ui li {
-  padding: 10px 20px;
-  border-right: 1px solid #ddd;
-  font-size: 1rem;
-}
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
 
-.highlighted-ui li a {
-  text-decoration: none;
-}
-
-.highlighted-ui li a:hover {
-  text-decoration: underline;
-}
-
-.messages__wrapper {
-  padding: 0.5rem;
-
-  display: flex;
-  flex-direction: column;
-
-  color: white;
-  background-color: black;
-  border-bottom: 1px solid #ddd;
-}
-
-.messages__wrapper a {
-  font-weight: 700;
-  color: white;
-}
-
-.messages__wrapper .messages {
-  padding: 5px 10px;
+  overflow: initial;
+  clip: initial;
+  white-space: initial;
 }

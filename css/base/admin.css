@@ -28,6 +28,53 @@
   font-size: 13px;
 }
 
+/* highlighted area */
+.highlighted-ui {
+  background-color: #fff9d5;
+}
+
+.highlighted-ui ul {
+  display: flex;
+}
+
+.highlighted-ui ul[hidden] {
+  display: none;
+}
+
+.highlighted-ui li {
+  padding: 10px 20px;
+  border-right: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.highlighted-ui li a {
+  text-decoration: none;
+}
+
+.highlighted-ui li a:hover {
+  text-decoration: underline;
+}
+
+.messages__wrapper {
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+  background-color: black;
+  border-bottom: 1px solid #ddd;
+}
+
+.messages__wrapper a {
+  font-weight: 700;
+  color: white;
+}
+
+.messages__wrapper .messages {
+  padding: 5px 10px;
+}
+
 /* layout builder interface */
 .layout-builder {
   padding: 1.5rem;
