@@ -320,7 +320,7 @@ div.layout-builder__section .layout-builder__region .contextual-region.focus {
 
 div.layout-builder__section .layout-builder__add-block {
   padding: 0;
-  margin: 0.5rem;
+  margin: 0.5rem 0rem;
 
   background-color: #fff9d5;
   border: 1px solid #bdbfc8;
@@ -417,22 +417,4 @@ form.layout-builder-discard-changes
   color: white;
   background-color: #e21833;
   border: 1px solid #e21822;
-}
-
-/* umdlib custom layout */
-.umd-lib-layout.layout--custom > div {
-  flex-grow: 1;
-}
-
-.umd-lib-layout.layout--custom div.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.umd-lib-layout.layout--custom div.row > div {
-  flex-grow: 1;
-}
-
-.umd-lib-layout.layout--custom div.row > div.column--0 {
-  display: none;
 }
