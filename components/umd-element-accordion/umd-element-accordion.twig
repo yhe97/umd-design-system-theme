@@ -1,8 +1,3 @@
-<umd-element-accordion-item theme="{{ theme }}">
-  <div slot="headline">
-    {{ headline }}
-  </div>
-  <div slot="body">
-    {% block body_slot %}{% endblock %}
-  </div>
-</umd-element-accordion-item>
+<umd-element-accordion>
+  {% block accordion_slot %}{% endblock %}
+</umd-element-accordion>

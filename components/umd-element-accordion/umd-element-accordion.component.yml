@@ -1,17 +1,7 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
 name: UMD Accordion
-props:
-  type: object
-  properties:
-    headline:
-      type: string
-      title: Headline
-    theme:
-      type: string
-      title: Theme
-      description: Use 'light', 'dark'
 slots:
-  body_slot:
-    title: Body (WYSIWYG)
-    description: Slot intended for WYSIWYG editor content
+  accordion_slot:
+    title: Accordion Item (UMD Accordion Item)
+    description: Slot intended for Accordion Item

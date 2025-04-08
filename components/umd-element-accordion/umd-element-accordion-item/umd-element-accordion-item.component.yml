@@ -1,0 +1,24 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: UMD Accordion Item
+props:
+  type: object
+  properties:
+    expand_default:
+      type: boolean
+      title: Expand
+      description: Expand this accordion by default
+    headline:
+      type: string
+      title: Headline
+    theme:
+      type: string
+      title: Theme
+      description: Use 'light', 'dark'
+slots:
+  cta_slot:
+    title: Call to Action (UMD CTA)
+    description: Slot intended for CTA
+  body_slot:
+    title: Body (WYSIWYG)
+    description: Slot intended for WYSIWYG editor content

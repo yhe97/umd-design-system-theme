@@ -1,0 +1,10 @@
+<umd-element-accordion-item data-visual-open="{{ expand_default }}" data-theme="{{ theme }}">
+  <div slot="headline">
+    {{ headline }}
+  </div>
+  <div slot="text" class="umd-rich-text">
+    {% block body_slot %}{% endblock %}
+  </div>
+
+  {% block cta_slot %}{% endblock %}
+</umd-element-accordion-item>

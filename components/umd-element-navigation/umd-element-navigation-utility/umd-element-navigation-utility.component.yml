@@ -5,9 +5,9 @@ props:
   type: object
   properties:
     alert_off:
-      type: string
+      type: boolean
       title: Alert Off
-      description: Use 'true' or leave empty
+      description: Select to deactivate alert
     layout:
       type: string
       title: Layout

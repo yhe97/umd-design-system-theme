@@ -1,4 +1,4 @@
-<umd-element-banner-promo theme="{{ theme }}">
+<umd-element-banner-promo data-theme="{{ theme }}">
   <p slot="headline">
     {{ headline }}
   </p>
@@ -7,9 +7,7 @@
     {% block body_slot %}{% endblock %}
   </div>
 
-  {% if cta %}
-    <div slot="actions">
-      {% block cta_slot %}{% endblock %}
-    </div>
-  {% endif %}
+  <div slot="actions">
+    {% block cta_slot %}{% endblock %}
+  </div>
 </umd-element-banner-promo>
