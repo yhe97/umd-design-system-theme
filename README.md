@@ -50,6 +50,31 @@ using the *replaces* syntax[^5]:
 replaces: 'sdc_theme_test:my-card'
 ```
 
+## Upgrading
+
+Because the theme comes with JS and precompiled CSS, this procedure should only be
+necessary when upgrading the theme for a Design System upgrade.
+
+### Design System / Tailwind CSS
+
+To pull the node modules, run the following:
+
+```bash
+npm install
+```
+
+To recompile the UMDDS CSS, run the following command:
+
+```bash
+npx tailwindcss --input src/index.css --output css/design-system/compiled.css
+```
+
+Which will evaluate src/index.css configuration and pipe the complied file
+to css/design-system/compiled.css.
+
+Also copy node_modules/@universityofmaryland/web-components-library/dist/index.js
+to js/design-system/index.js
+
 [^3]: <https://www.drupal.org/docs/develop/theming-drupal/using-single-directory-components/using-your-new-single-directory-component#s-using-your-component-in-twig-template>
 
 [^4]: <https://www.drupal.org/project/ui_patterns>

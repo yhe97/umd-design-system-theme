@@ -1,0 +1,15 @@
+{
+  "name": "umdds",
+  "version": "1.0.0",
+  "description": "UMD Design System Drupal Theme",
+  "main": "js/tmp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@universityofmaryland/web-components-library": "^1.9.2",
+    "@universityofmaryland/web-styles-library": "^1.1.0"
+  }
+}
