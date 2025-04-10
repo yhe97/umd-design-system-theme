@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* UMDDS accessibility - skip to main content link  */
 .umd-skip-content {
   clip: rect(0, 0, 0, 0);
