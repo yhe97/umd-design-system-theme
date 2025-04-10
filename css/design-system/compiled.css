@@ -642,6 +642,18 @@ video {
   font-style: normal;
 }
 
+.sr-only {
+  clip: rect(0,0,0,0);
+  border-width: 0px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 @keyframes loader-animation {
   0%, 100% {
     box-shadow: 0 8px 0 -3px #454545;
@@ -719,6 +731,1240 @@ video {
   to {
     transform: translateX(0);
   }
+}
+
+.umd-adjacent-line-text {
+  position: relative;
+}
+
+.umd-adjacent-line-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -24px;
+  width: 2px;
+  height: 100%;
+  background-color: #E21833;
+}
+
+.umd-rich-text {
+  -font-weight: 400;
+}
+
+.umd-rich-text a {
+  position: relative;
+  background-position: left calc(100% - 1px);
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  transition: color 0.5s, background-size 0.5s, background-image 0.5s, background-position 0.5s;
+  color: #000000;
+  background-image: linear-gradient(#000000, #000000);
+}
+
+.umd-rich-text a:hover, .umd-rich-text a:focus {
+  background-position: left calc(100%);
+  text-decoration: none !important;
+  background-size: 100% 1px;
+  background-image: linear-gradient(#E21833, #E21833);
+  color: #000000 !important;
+}
+
+.umd-rich-text a {
+  class-name: umd-text-link-red;
+}
+
+.umd-rich-text {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.umd-rich-text > * {
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.umd-rich-text > *:first-child {
+  margin-top: 0;
+}
+
+.umd-rich-text > *:empty {
+  margin-top: 0;
+}
+
+.umd-rich-text em, .umd-rich-text i {
+  font-style: italic;
+}
+
+.umd-rich-text strong, .umd-rich-text b {
+  -font-weight: 700;
+}
+
+.umd-rich-text u {
+  text-decoration: underline;
+}
+
+.umd-rich-text p,
+    .umd-rich-text ul,
+    .umd-rich-text ol,
+    .umd-rich-text pre,
+    .umd-rich-text blockquote {
+  max-width: 960px;
+}
+
+.umd-rich-text hr {
+  border: none;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.umd-rich-text img {
+  max-width: 100%;
+}
+
+.umd-rich-text sup {
+  font-size: 12px;
+}
+
+.umd-rich-text sub {
+  font-size: 12px;
+}
+
+.umd-rich-text small {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.28em;
+}
+
+@media (min-width: 650px) {
+  .umd-rich-text small {
+    font-size: calc(12px + 0.16vw);
+  }
+}
+
+@media (min-width: 1024px) {
+  .umd-rich-text small {
+    font-size: 14px;
+    line-height: 1.28em;
+  }
+}
+
+.umd-rich-text small {
+  display: inline-block;
+}
+
+.umd-rich-text code, .umd-rich-text pre {
+  border: 1px solid #FAFAFA;
+  background-color: #FAFAFA;
+  border-radius: 3px;
+  color: currentColor;
+  -font-family: monospace;
+}
+
+.umd-rich-text code {
+  display: inline-block;
+  padding: 0 8px;
+}
+
+.umd-rich-text pre {
+  padding: 8px;
+}
+
+.umd-rich-text blockquote {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.40em;
+}
+
+@media (min-width: 650px) {
+  .umd-rich-text blockquote {
+    font-size: calc(18px + 0.5vw);
+  }
+}
+
+@media (min-width: 1024px) {
+  .umd-rich-text blockquote {
+    font-size: 22px;
+    line-height: 1.25em;
+  }
+}
+
+.umd-rich-text blockquote {
+  display: inline-block;
+  border-left: 2px solid #E21833;
+  position: relative;
+  padding-left: 24px;
+}
+
+.umd-rich-text ul,
+    .umd-rich-text ol ul {
+  class-name: umd-list-unordered;
+  padding: 0;
+  counter-reset: item;
+  list-style-type: none !important;
+}
+
+.umd-rich-text ul li, .umd-rich-text ol ul li {
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.4em;
+}
+
+.umd-rich-text ul li:before, .umd-rich-text ol ul li:before {
+  content: "•";
+  font-weight: bold;
+  counter-increment: item;
+  position: absolute;
+  top: 1px;
+  right: calc(100% - 12px);
+}
+
+.umd-rich-text ul li + li, .umd-rich-text ul li > ul, .umd-rich-text ul li > ol, .umd-rich-text ol ul li + li, .umd-rich-text ol ul li > ul, .umd-rich-text ol ul li > ol {
+  margin-top: 16px;
+}
+
+.umd-rich-text ul li li, .umd-rich-text ol ul li li {
+  padding-left: 40px;
+}
+
+.umd-rich-text ul li li:before, .umd-rich-text ol ul li li:before {
+  right: calc(100% - 24px);
+}
+
+.umd-rich-text ul ol, .umd-rich-text ol ul ol {
+  padding: 0;
+  counter-reset: item;
+  list-style-type: none !important;
+  line-height: 1.4em;
+}
+
+.umd-rich-text ul ol li, .umd-rich-text ol ul ol li {
+  padding-left: 40px;
+  position: relative;
+}
+
+.umd-rich-text ul ol li:before, .umd-rich-text ol ul ol li:before {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25em;
+  content: counter(item);
+  counter-increment: item;
+  font-variant-numeric: tabular-nums;
+  position: absolute;
+  top: 1px;
+  right: calc(100% - 24px);
+  unicode-bidi: isolate;
+  white-space: pre;
+}
+
+.umd-rich-text ul ol > li li:before, .umd-rich-text ol ul ol > li li:before {
+  content: counter(item) ".";
+}
+
+.umd-rich-text ul ol ol, .umd-rich-text ol ul ol ol {
+  counter-reset: item;
+}
+
+.umd-rich-text ul ol li + li, .umd-rich-text ul ol li > ul, .umd-rich-text ul ol li > ol, .umd-rich-text ol ul ol li + li, .umd-rich-text ol ul ol li > ul, .umd-rich-text ol ul ol li > ol {
+  margin-top: 16px;
+}
+
+.umd-rich-text ul ul[style*='list-style-type:disc'] > li:before,
+    .umd-rich-text ul ul[style*='list-style-type: disc'] > li:before,
+    .umd-rich-text ol ul ul[style*='list-style-type:disc'] > li:before,
+    .umd-rich-text ol ul ul[style*='list-style-type: disc'] > li:before {
+  content: counter(item, disc);
+}
+
+.umd-rich-text ul ul[style*='list-style-type:circle'] > li:before,
+    .umd-rich-text ul ul[style*='list-style-type: circle'] > li:before,
+    .umd-rich-text ol ul ul[style*='list-style-type:circle'] > li:before,
+    .umd-rich-text ol ul ul[style*='list-style-type: circle'] > li:before {
+  content: counter(item, circle);
+}
+
+.umd-rich-text ul ul[style*='list-style-type:square'] > li:before,
+    .umd-rich-text ul ul[style*='list-style-type: square'] > li:before,
+    .umd-rich-text ol ul ul[style*='list-style-type:square'] > li:before,
+    .umd-rich-text ol ul ul[style*='list-style-type: square'] > li:before {
+  content: counter(item, square);
+}
+
+.umd-rich-text ol,
+    .umd-rich-text ul ol {
+  class-name: umd-list-ordered;
+  padding: 0;
+  counter-reset: item;
+  list-style-type: none !important;
+  line-height: 1.4em;
+}
+
+.umd-rich-text ol li, .umd-rich-text ul ol li {
+  padding-left: 40px;
+  position: relative;
+}
+
+.umd-rich-text ol li:before, .umd-rich-text ul ol li:before {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25em;
+  content: counter(item);
+  counter-increment: item;
+  font-variant-numeric: tabular-nums;
+  position: absolute;
+  top: 1px;
+  right: calc(100% - 24px);
+  unicode-bidi: isolate;
+  white-space: pre;
+}
+
+.umd-rich-text ol > li li:before, .umd-rich-text ul ol > li li:before {
+  content: counter(item) ".";
+}
+
+.umd-rich-text ol ol, .umd-rich-text ul ol ol {
+  counter-reset: item;
+}
+
+.umd-rich-text ol li + li, .umd-rich-text ol li > ul, .umd-rich-text ol li > ol, .umd-rich-text ul ol li + li, .umd-rich-text ul ol li > ul, .umd-rich-text ul ol li > ol {
+  margin-top: 16px;
+}
+
+.umd-rich-text ol > li, .umd-rich-text ul ol > li {
+  padding-left: 40px;
+}
+
+.umd-rich-text ol > li:before, .umd-rich-text ul ol > li:before {
+  content: counter(item);
+  border-right: 1px solid #E21833;
+  padding-right: 8px;
+  right: calc(100% - 32px);
+}
+
+.umd-rich-text ol ul, .umd-rich-text ul ol ul {
+  padding: 0;
+  counter-reset: item;
+  list-style-type: none !important;
+}
+
+.umd-rich-text ol ul li, .umd-rich-text ul ol ul li {
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.4em;
+}
+
+.umd-rich-text ol ul li:before, .umd-rich-text ul ol ul li:before {
+  content: "•";
+  font-weight: bold;
+  counter-increment: item;
+  position: absolute;
+  top: 1px;
+  right: calc(100% - 12px);
+}
+
+.umd-rich-text ol ul li + li, .umd-rich-text ol ul li > ul, .umd-rich-text ol ul li > ol, .umd-rich-text ul ol ul li + li, .umd-rich-text ul ol ul li > ul, .umd-rich-text ul ol ul li > ol {
+  margin-top: 16px;
+}
+
+.umd-rich-text ol ul li li, .umd-rich-text ul ol ul li li {
+  padding-left: 40px;
+}
+
+.umd-rich-text ol ul li li:before, .umd-rich-text ul ol ul li li:before {
+  right: calc(100% - 24px);
+}
+
+.umd-rich-text ol ul ol, .umd-rich-text ul ol ul ol {
+  padding: 0;
+  counter-reset: item;
+  list-style-type: none !important;
+  line-height: 1.4em;
+}
+
+.umd-rich-text ol ul ol li, .umd-rich-text ul ol ul ol li {
+  padding-left: 40px;
+  position: relative;
+}
+
+.umd-rich-text ol ul ol li:before, .umd-rich-text ul ol ul ol li:before {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25em;
+  content: counter(item);
+  counter-increment: item;
+  font-variant-numeric: tabular-nums;
+  position: absolute;
+  top: 1px;
+  right: calc(100% - 24px);
+  unicode-bidi: isolate;
+  white-space: pre;
+}
+
+.umd-rich-text ol ul ol > li li:before, .umd-rich-text ul ol ul ol > li li:before {
+  content: counter(item) ".";
+}
+
+.umd-rich-text ol ul ol ol, .umd-rich-text ul ol ul ol ol {
+  counter-reset: item;
+}
+
+.umd-rich-text ol ul ol li + li, .umd-rich-text ol ul ol li > ul, .umd-rich-text ol ul ol li > ol, .umd-rich-text ul ol ul ol li + li, .umd-rich-text ul ol ul ol li > ul, .umd-rich-text ul ol ul ol li > ol {
+  margin-top: 16px;
+}
+
+.umd-rich-text ol ol[style*='list-style-type:decimal'] > li:before,
+    .umd-rich-text ol ol[style*='list-style-type: decimal'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type:decimal'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type: decimal'] > li:before {
+  content: counter(item, decimal) '.';
+}
+
+.umd-rich-text ol > ol[style*='list-style-type:decimal'] > li:before,
+    .umd-rich-text ol > ol[style*='list-style-type: decimal'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type:decimal'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type: decimal'] > li:before {
+  content: counter(item, decimal);
+}
+
+.umd-rich-text ol ol[style*='list-style-type:cjk-decimal'] > li:before,
+    .umd-rich-text ol ol[style*='list-style-type: cjk-decimal'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type:cjk-decimal'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type: cjk-decimal'] > li:before {
+  content: counter(item, cjk-decimal) '.';
+}
+
+.umd-rich-text ol > ol[style*='list-style-type:cjk-decimal'] > li:before,
+    .umd-rich-text ol > ol[style*='list-style-type: cjk-decimal'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type:cjk-decimal'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type: cjk-decimal'] > li:before {
+  content: counter(item, cjk-decimal);
+}
+
+.umd-rich-text ol ol[style*='list-style-type:decimal-leading-zero'] > li:before,
+    .umd-rich-text ol ol[style*='list-style-type: decimal-leading-zero'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type:decimal-leading-zero'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type: decimal-leading-zero'] > li:before {
+  content: counter(item, decimal-leading-zero) '.';
+}
+
+.umd-rich-text ol > ol[style*='list-style-type:decimal-leading-zero'] > li:before,
+    .umd-rich-text ol > ol[style*='list-style-type: decimal-leading-zero'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type:decimal-leading-zero'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type: decimal-leading-zero'] > li:before {
+  content: counter(item, decimal-leading-zero);
+}
+
+.umd-rich-text ol ol[style*='list-style-type:lower-roman'] > li:before,
+    .umd-rich-text ol ol[style*='list-style-type: lower-roman'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type:lower-roman'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type: lower-roman'] > li:before {
+  content: counter(item, lower-roman) '.';
+}
+
+.umd-rich-text ol > ol[style*='list-style-type:lower-roman'] > li:before,
+    .umd-rich-text ol > ol[style*='list-style-type: lower-roman'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type:lower-roman'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type: lower-roman'] > li:before {
+  content: counter(item, lower-roman);
+}
+
+.umd-rich-text ol ol[style*='list-style-type:upper-roman'] > li:before,
+    .umd-rich-text ol ol[style*='list-style-type: upper-roman'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type:upper-roman'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type: upper-roman'] > li:before {
+  content: counter(item, upper-roman) '.';
+}
+
+.umd-rich-text ol > ol[style*='list-style-type:upper-roman'] > li:before,
+    .umd-rich-text ol > ol[style*='list-style-type: upper-roman'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type:upper-roman'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type: upper-roman'] > li:before {
+  content: counter(item, upper-roman);
+}
+
+.umd-rich-text ol ol[style*='list-style-type:lower-greek'] > li:before,
+    .umd-rich-text ol ol[style*='list-style-type: lower-greek'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type:lower-greek'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type: lower-greek'] > li:before {
+  content: counter(item, lower-greek) '.';
+}
+
+.umd-rich-text ol > ol[style*='list-style-type:lower-greek'] > li:before,
+    .umd-rich-text ol > ol[style*='list-style-type: lower-greek'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type:lower-greek'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type: lower-greek'] > li:before {
+  content: counter(item, lower-greek);
+}
+
+.umd-rich-text ol ol[style*='list-style-type:lower-latin'] > li:before,
+    .umd-rich-text ol ol[style*='list-style-type: lower-latin'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type:lower-latin'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type: lower-latin'] > li:before {
+  content: counter(item, lower-latin) '.';
+}
+
+.umd-rich-text ol > ol[style*='list-style-type:lower-latin'] > li:before,
+    .umd-rich-text ol > ol[style*='list-style-type: lower-latin'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type:lower-latin'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type: lower-latin'] > li:before {
+  content: counter(item, lower-latin);
+}
+
+.umd-rich-text ol ol[style*='list-style-type:upper-latin'] > li:before,
+    .umd-rich-text ol ol[style*='list-style-type: upper-latin'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type:upper-latin'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type: upper-latin'] > li:before {
+  content: counter(item, upper-latin) '.';
+}
+
+.umd-rich-text ol > ol[style*='list-style-type:upper-latin'] > li:before,
+    .umd-rich-text ol > ol[style*='list-style-type: upper-latin'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type:upper-latin'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type: upper-latin'] > li:before {
+  content: counter(item, upper-latin);
+}
+
+.umd-rich-text ol ol[style*='list-style-type:lower-alpha'] > li:before,
+    .umd-rich-text ol ol[style*='list-style-type: lower-alpha'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type:lower-alpha'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type: lower-alpha'] > li:before {
+  content: counter(item, lower-alpha) '.';
+}
+
+.umd-rich-text ol > ol[style*='list-style-type:lower-alpha'] > li:before,
+    .umd-rich-text ol > ol[style*='list-style-type: lower-alpha'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type:lower-alpha'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type: lower-alpha'] > li:before {
+  content: counter(item, lower-alpha);
+}
+
+.umd-rich-text ol ol[style*='list-style-type:upper-alpha'] > li:before,
+    .umd-rich-text ol ol[style*='list-style-type: upper-alpha'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type:upper-alpha'] > li:before,
+    .umd-rich-text ul ol ol[style*='list-style-type: upper-alpha'] > li:before {
+  content: counter(item, upper-alpha) '.';
+}
+
+.umd-rich-text ol > ol[style*='list-style-type:upper-alpha'] > li:before,
+    .umd-rich-text ol > ol[style*='list-style-type: upper-alpha'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type:upper-alpha'] > li:before,
+    .umd-rich-text ul ol > ol[style*='list-style-type: upper-alpha'] > li:before {
+  content: counter(item, upper-alpha);
+}
+
+.umd-rich-text + ol, .umd-rich-textol + ul {
+  margin-top: 16px;
+}
+
+.umd-rich-text table {
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+  table-layout: fixed;
+  max-width: 100%;
+}
+
+.umd-rich-text table th {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25em;
+}
+
+.umd-rich-text table td {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.375em;
+}
+
+@media (min-width: 650px) {
+  .umd-rich-text table td {
+    font-size: calc(14px + 0.16vw);
+  }
+}
+
+@media (min-width: 1024px) {
+  .umd-rich-text table td {
+    font-size: 16px;
+    line-height: 1.375em;
+  }
+}
+
+.umd-rich-text table th, .umd-rich-text table td {
+  padding: 24px;
+  vertical-align: top;
+}
+
+.umd-rich-text table th:first-child, .umd-rich-text table td:first-child {
+  padding-left: 24px;
+}
+
+.umd-rich-text table th:last-Child, .umd-rich-text table td:last-Child {
+  padding-right: 24px;
+}
+
+.umd-rich-text table thead th {
+  background: #F1F1F1;
+  color: #000000;
+  text-align: left;
+}
+
+.umd-rich-text table tbody tr {
+  border-top: 1px solid #E6E6E6;
+}
+
+.umd-rich-text table tr:nth-child(even) {
+  background: #FAFAFA;
+}
+
+.umd-rich-text table {
+  class-name: umd-table-inline;
+  class-name: umd-rich-text-inline-table;
+}
+
+.umd-rich-text-dark {
+  -font-weight: 400;
+}
+
+.umd-rich-text-dark a {
+  position: relative;
+  background-position: left calc(100% - 1px);
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  transition: color 0.5s, background-size 0.5s, background-image 0.5s, background-position 0.5s;
+  color: #FFFFFF;
+  background-image: linear-gradient(#ffffff, #ffffff);
+}
+
+.umd-rich-text-dark a:hover, .umd-rich-text-dark a:focus {
+  background-position: left calc(100%);
+  text-decoration: none !important;
+  background-size: 100% 1px;
+  background-image: linear-gradient(#FFD200, #FFD200);
+  color: #FFFFFF !important;
+}
+
+.umd-rich-text-dark a {
+  class-name: umd-text-link-white;
+}
+
+.umd-rich-text-dark {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.umd-rich-text-dark > * {
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.umd-rich-text-dark > *:first-child {
+  margin-top: 0;
+}
+
+.umd-rich-text-dark > *:empty {
+  margin-top: 0;
+}
+
+.umd-rich-text-dark em, .umd-rich-text-dark i {
+  font-style: italic;
+}
+
+.umd-rich-text-dark strong, .umd-rich-text-dark b {
+  -font-weight: 700;
+}
+
+.umd-rich-text-dark u {
+  text-decoration: underline;
+}
+
+.umd-rich-text-dark p,
+    .umd-rich-text-dark ul,
+    .umd-rich-text-dark ol,
+    .umd-rich-text-dark pre,
+    .umd-rich-text-dark blockquote {
+  max-width: 960px;
+}
+
+.umd-rich-text-dark hr {
+  border: none;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.umd-rich-text-dark img {
+  max-width: 100%;
+}
+
+.umd-rich-text-dark sup {
+  font-size: 12px;
+}
+
+.umd-rich-text-dark sub {
+  font-size: 12px;
+}
+
+.umd-rich-text-dark small {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.28em;
+}
+
+@media (min-width: 650px) {
+  .umd-rich-text-dark small {
+    font-size: calc(12px + 0.16vw);
+  }
+}
+
+@media (min-width: 1024px) {
+  .umd-rich-text-dark small {
+    font-size: 14px;
+    line-height: 1.28em;
+  }
+}
+
+.umd-rich-text-dark small {
+  display: inline-block;
+}
+
+.umd-rich-text-dark code, .umd-rich-text-dark pre {
+  border: 1px solid #FAFAFA;
+  background-color: #FAFAFA;
+  border-radius: 3px;
+  color: currentColor;
+  -font-family: monospace;
+}
+
+.umd-rich-text-dark code {
+  display: inline-block;
+  padding: 0 8px;
+}
+
+.umd-rich-text-dark pre {
+  padding: 8px;
+}
+
+.umd-rich-text-dark blockquote {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.40em;
+}
+
+@media (min-width: 650px) {
+  .umd-rich-text-dark blockquote {
+    font-size: calc(18px + 0.5vw);
+  }
+}
+
+@media (min-width: 1024px) {
+  .umd-rich-text-dark blockquote {
+    font-size: 22px;
+    line-height: 1.25em;
+  }
+}
+
+.umd-rich-text-dark blockquote {
+  display: inline-block;
+  border-left: 2px solid #E21833;
+  position: relative;
+  padding-left: 24px;
+}
+
+.umd-rich-text-dark ul,
+    .umd-rich-text-dark ol ul {
+  class-name: umd-list-unordered;
+  padding: 0;
+  counter-reset: item;
+  list-style-type: none !important;
+}
+
+.umd-rich-text-dark ul li, .umd-rich-text-dark ol ul li {
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.4em;
+}
+
+.umd-rich-text-dark ul li:before, .umd-rich-text-dark ol ul li:before {
+  content: "•";
+  font-weight: bold;
+  counter-increment: item;
+  position: absolute;
+  top: 1px;
+  right: calc(100% - 12px);
+}
+
+.umd-rich-text-dark ul li + li, .umd-rich-text-dark ul li > ul, .umd-rich-text-dark ul li > ol, .umd-rich-text-dark ol ul li + li, .umd-rich-text-dark ol ul li > ul, .umd-rich-text-dark ol ul li > ol {
+  margin-top: 16px;
+}
+
+.umd-rich-text-dark ul li li, .umd-rich-text-dark ol ul li li {
+  padding-left: 40px;
+}
+
+.umd-rich-text-dark ul li li:before, .umd-rich-text-dark ol ul li li:before {
+  right: calc(100% - 24px);
+}
+
+.umd-rich-text-dark ul ol, .umd-rich-text-dark ol ul ol {
+  padding: 0;
+  counter-reset: item;
+  list-style-type: none !important;
+  line-height: 1.4em;
+}
+
+.umd-rich-text-dark ul ol li, .umd-rich-text-dark ol ul ol li {
+  padding-left: 40px;
+  position: relative;
+}
+
+.umd-rich-text-dark ul ol li:before, .umd-rich-text-dark ol ul ol li:before {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25em;
+  content: counter(item);
+  counter-increment: item;
+  font-variant-numeric: tabular-nums;
+  position: absolute;
+  top: 1px;
+  right: calc(100% - 24px);
+  unicode-bidi: isolate;
+  white-space: pre;
+}
+
+.umd-rich-text-dark ul ol > li li:before, .umd-rich-text-dark ol ul ol > li li:before {
+  content: counter(item) ".";
+}
+
+.umd-rich-text-dark ul ol ol, .umd-rich-text-dark ol ul ol ol {
+  counter-reset: item;
+}
+
+.umd-rich-text-dark ul ol li + li, .umd-rich-text-dark ul ol li > ul, .umd-rich-text-dark ul ol li > ol, .umd-rich-text-dark ol ul ol li + li, .umd-rich-text-dark ol ul ol li > ul, .umd-rich-text-dark ol ul ol li > ol {
+  margin-top: 16px;
+}
+
+.umd-rich-text-dark ul ul[style*='list-style-type:disc'] > li:before,
+    .umd-rich-text-dark ul ul[style*='list-style-type: disc'] > li:before,
+    .umd-rich-text-dark ol ul ul[style*='list-style-type:disc'] > li:before,
+    .umd-rich-text-dark ol ul ul[style*='list-style-type: disc'] > li:before {
+  content: counter(item, disc);
+}
+
+.umd-rich-text-dark ul ul[style*='list-style-type:circle'] > li:before,
+    .umd-rich-text-dark ul ul[style*='list-style-type: circle'] > li:before,
+    .umd-rich-text-dark ol ul ul[style*='list-style-type:circle'] > li:before,
+    .umd-rich-text-dark ol ul ul[style*='list-style-type: circle'] > li:before {
+  content: counter(item, circle);
+}
+
+.umd-rich-text-dark ul ul[style*='list-style-type:square'] > li:before,
+    .umd-rich-text-dark ul ul[style*='list-style-type: square'] > li:before,
+    .umd-rich-text-dark ol ul ul[style*='list-style-type:square'] > li:before,
+    .umd-rich-text-dark ol ul ul[style*='list-style-type: square'] > li:before {
+  content: counter(item, square);
+}
+
+.umd-rich-text-dark ol,
+    .umd-rich-text-dark ul ol {
+  class-name: umd-list-ordered;
+  padding: 0;
+  counter-reset: item;
+  list-style-type: none !important;
+  line-height: 1.4em;
+}
+
+.umd-rich-text-dark ol li, .umd-rich-text-dark ul ol li {
+  padding-left: 40px;
+  position: relative;
+}
+
+.umd-rich-text-dark ol li:before, .umd-rich-text-dark ul ol li:before {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25em;
+  content: counter(item);
+  counter-increment: item;
+  font-variant-numeric: tabular-nums;
+  position: absolute;
+  top: 1px;
+  right: calc(100% - 24px);
+  unicode-bidi: isolate;
+  white-space: pre;
+}
+
+.umd-rich-text-dark ol > li li:before, .umd-rich-text-dark ul ol > li li:before {
+  content: counter(item) ".";
+}
+
+.umd-rich-text-dark ol ol, .umd-rich-text-dark ul ol ol {
+  counter-reset: item;
+}
+
+.umd-rich-text-dark ol li + li, .umd-rich-text-dark ol li > ul, .umd-rich-text-dark ol li > ol, .umd-rich-text-dark ul ol li + li, .umd-rich-text-dark ul ol li > ul, .umd-rich-text-dark ul ol li > ol {
+  margin-top: 16px;
+}
+
+.umd-rich-text-dark ol > li, .umd-rich-text-dark ul ol > li {
+  padding-left: 40px;
+}
+
+.umd-rich-text-dark ol > li:before, .umd-rich-text-dark ul ol > li:before {
+  content: counter(item);
+  border-right: 1px solid #E21833;
+  padding-right: 8px;
+  right: calc(100% - 32px);
+}
+
+.umd-rich-text-dark ol ul, .umd-rich-text-dark ul ol ul {
+  padding: 0;
+  counter-reset: item;
+  list-style-type: none !important;
+}
+
+.umd-rich-text-dark ol ul li, .umd-rich-text-dark ul ol ul li {
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.4em;
+}
+
+.umd-rich-text-dark ol ul li:before, .umd-rich-text-dark ul ol ul li:before {
+  content: "•";
+  font-weight: bold;
+  counter-increment: item;
+  position: absolute;
+  top: 1px;
+  right: calc(100% - 12px);
+}
+
+.umd-rich-text-dark ol ul li + li, .umd-rich-text-dark ol ul li > ul, .umd-rich-text-dark ol ul li > ol, .umd-rich-text-dark ul ol ul li + li, .umd-rich-text-dark ul ol ul li > ul, .umd-rich-text-dark ul ol ul li > ol {
+  margin-top: 16px;
+}
+
+.umd-rich-text-dark ol ul li li, .umd-rich-text-dark ul ol ul li li {
+  padding-left: 40px;
+}
+
+.umd-rich-text-dark ol ul li li:before, .umd-rich-text-dark ul ol ul li li:before {
+  right: calc(100% - 24px);
+}
+
+.umd-rich-text-dark ol ul ol, .umd-rich-text-dark ul ol ul ol {
+  padding: 0;
+  counter-reset: item;
+  list-style-type: none !important;
+  line-height: 1.4em;
+}
+
+.umd-rich-text-dark ol ul ol li, .umd-rich-text-dark ul ol ul ol li {
+  padding-left: 40px;
+  position: relative;
+}
+
+.umd-rich-text-dark ol ul ol li:before, .umd-rich-text-dark ul ol ul ol li:before {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25em;
+  content: counter(item);
+  counter-increment: item;
+  font-variant-numeric: tabular-nums;
+  position: absolute;
+  top: 1px;
+  right: calc(100% - 24px);
+  unicode-bidi: isolate;
+  white-space: pre;
+}
+
+.umd-rich-text-dark ol ul ol > li li:before, .umd-rich-text-dark ul ol ul ol > li li:before {
+  content: counter(item) ".";
+}
+
+.umd-rich-text-dark ol ul ol ol, .umd-rich-text-dark ul ol ul ol ol {
+  counter-reset: item;
+}
+
+.umd-rich-text-dark ol ul ol li + li, .umd-rich-text-dark ol ul ol li > ul, .umd-rich-text-dark ol ul ol li > ol, .umd-rich-text-dark ul ol ul ol li + li, .umd-rich-text-dark ul ol ul ol li > ul, .umd-rich-text-dark ul ol ul ol li > ol {
+  margin-top: 16px;
+}
+
+.umd-rich-text-dark ol ol[style*='list-style-type:decimal'] > li:before,
+    .umd-rich-text-dark ol ol[style*='list-style-type: decimal'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type:decimal'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type: decimal'] > li:before {
+  content: counter(item, decimal) '.';
+}
+
+.umd-rich-text-dark ol > ol[style*='list-style-type:decimal'] > li:before,
+    .umd-rich-text-dark ol > ol[style*='list-style-type: decimal'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type:decimal'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type: decimal'] > li:before {
+  content: counter(item, decimal);
+}
+
+.umd-rich-text-dark ol ol[style*='list-style-type:cjk-decimal'] > li:before,
+    .umd-rich-text-dark ol ol[style*='list-style-type: cjk-decimal'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type:cjk-decimal'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type: cjk-decimal'] > li:before {
+  content: counter(item, cjk-decimal) '.';
+}
+
+.umd-rich-text-dark ol > ol[style*='list-style-type:cjk-decimal'] > li:before,
+    .umd-rich-text-dark ol > ol[style*='list-style-type: cjk-decimal'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type:cjk-decimal'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type: cjk-decimal'] > li:before {
+  content: counter(item, cjk-decimal);
+}
+
+.umd-rich-text-dark ol ol[style*='list-style-type:decimal-leading-zero'] > li:before,
+    .umd-rich-text-dark ol ol[style*='list-style-type: decimal-leading-zero'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type:decimal-leading-zero'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type: decimal-leading-zero'] > li:before {
+  content: counter(item, decimal-leading-zero) '.';
+}
+
+.umd-rich-text-dark ol > ol[style*='list-style-type:decimal-leading-zero'] > li:before,
+    .umd-rich-text-dark ol > ol[style*='list-style-type: decimal-leading-zero'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type:decimal-leading-zero'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type: decimal-leading-zero'] > li:before {
+  content: counter(item, decimal-leading-zero);
+}
+
+.umd-rich-text-dark ol ol[style*='list-style-type:lower-roman'] > li:before,
+    .umd-rich-text-dark ol ol[style*='list-style-type: lower-roman'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type:lower-roman'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type: lower-roman'] > li:before {
+  content: counter(item, lower-roman) '.';
+}
+
+.umd-rich-text-dark ol > ol[style*='list-style-type:lower-roman'] > li:before,
+    .umd-rich-text-dark ol > ol[style*='list-style-type: lower-roman'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type:lower-roman'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type: lower-roman'] > li:before {
+  content: counter(item, lower-roman);
+}
+
+.umd-rich-text-dark ol ol[style*='list-style-type:upper-roman'] > li:before,
+    .umd-rich-text-dark ol ol[style*='list-style-type: upper-roman'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type:upper-roman'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type: upper-roman'] > li:before {
+  content: counter(item, upper-roman) '.';
+}
+
+.umd-rich-text-dark ol > ol[style*='list-style-type:upper-roman'] > li:before,
+    .umd-rich-text-dark ol > ol[style*='list-style-type: upper-roman'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type:upper-roman'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type: upper-roman'] > li:before {
+  content: counter(item, upper-roman);
+}
+
+.umd-rich-text-dark ol ol[style*='list-style-type:lower-greek'] > li:before,
+    .umd-rich-text-dark ol ol[style*='list-style-type: lower-greek'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type:lower-greek'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type: lower-greek'] > li:before {
+  content: counter(item, lower-greek) '.';
+}
+
+.umd-rich-text-dark ol > ol[style*='list-style-type:lower-greek'] > li:before,
+    .umd-rich-text-dark ol > ol[style*='list-style-type: lower-greek'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type:lower-greek'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type: lower-greek'] > li:before {
+  content: counter(item, lower-greek);
+}
+
+.umd-rich-text-dark ol ol[style*='list-style-type:lower-latin'] > li:before,
+    .umd-rich-text-dark ol ol[style*='list-style-type: lower-latin'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type:lower-latin'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type: lower-latin'] > li:before {
+  content: counter(item, lower-latin) '.';
+}
+
+.umd-rich-text-dark ol > ol[style*='list-style-type:lower-latin'] > li:before,
+    .umd-rich-text-dark ol > ol[style*='list-style-type: lower-latin'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type:lower-latin'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type: lower-latin'] > li:before {
+  content: counter(item, lower-latin);
+}
+
+.umd-rich-text-dark ol ol[style*='list-style-type:upper-latin'] > li:before,
+    .umd-rich-text-dark ol ol[style*='list-style-type: upper-latin'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type:upper-latin'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type: upper-latin'] > li:before {
+  content: counter(item, upper-latin) '.';
+}
+
+.umd-rich-text-dark ol > ol[style*='list-style-type:upper-latin'] > li:before,
+    .umd-rich-text-dark ol > ol[style*='list-style-type: upper-latin'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type:upper-latin'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type: upper-latin'] > li:before {
+  content: counter(item, upper-latin);
+}
+
+.umd-rich-text-dark ol ol[style*='list-style-type:lower-alpha'] > li:before,
+    .umd-rich-text-dark ol ol[style*='list-style-type: lower-alpha'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type:lower-alpha'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type: lower-alpha'] > li:before {
+  content: counter(item, lower-alpha) '.';
+}
+
+.umd-rich-text-dark ol > ol[style*='list-style-type:lower-alpha'] > li:before,
+    .umd-rich-text-dark ol > ol[style*='list-style-type: lower-alpha'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type:lower-alpha'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type: lower-alpha'] > li:before {
+  content: counter(item, lower-alpha);
+}
+
+.umd-rich-text-dark ol ol[style*='list-style-type:upper-alpha'] > li:before,
+    .umd-rich-text-dark ol ol[style*='list-style-type: upper-alpha'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type:upper-alpha'] > li:before,
+    .umd-rich-text-dark ul ol ol[style*='list-style-type: upper-alpha'] > li:before {
+  content: counter(item, upper-alpha) '.';
+}
+
+.umd-rich-text-dark ol > ol[style*='list-style-type:upper-alpha'] > li:before,
+    .umd-rich-text-dark ol > ol[style*='list-style-type: upper-alpha'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type:upper-alpha'] > li:before,
+    .umd-rich-text-dark ul ol > ol[style*='list-style-type: upper-alpha'] > li:before {
+  content: counter(item, upper-alpha);
+}
+
+.umd-rich-text-dark + ol, .umd-rich-text-darkol + ul {
+  margin-top: 16px;
+}
+
+.umd-rich-text-dark table {
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+  table-layout: fixed;
+  max-width: 100%;
+}
+
+.umd-rich-text-dark table th {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25em;
+}
+
+.umd-rich-text-dark table td {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.375em;
+}
+
+@media (min-width: 650px) {
+  .umd-rich-text-dark table td {
+    font-size: calc(14px + 0.16vw);
+  }
+}
+
+@media (min-width: 1024px) {
+  .umd-rich-text-dark table td {
+    font-size: 16px;
+    line-height: 1.375em;
+  }
+}
+
+.umd-rich-text-dark table th, .umd-rich-text-dark table td {
+  padding: 24px;
+  vertical-align: top;
+}
+
+.umd-rich-text-dark table th:first-child, .umd-rich-text-dark table td:first-child {
+  padding-left: 24px;
+}
+
+.umd-rich-text-dark table th:last-Child, .umd-rich-text-dark table td:last-Child {
+  padding-right: 24px;
+}
+
+.umd-rich-text-dark table thead th {
+  background: #F1F1F1;
+  color: #000000;
+  text-align: left;
+}
+
+.umd-rich-text-dark table tbody tr {
+  border-top: 1px solid #E6E6E6;
+}
+
+.umd-rich-text-dark table tr:nth-child(even) {
+  background: #FAFAFA;
+}
+
+.umd-rich-text-dark table {
+  class-name: umd-table-inline;
+  class-name: umd-rich-text-inline-table;
+}
+
+.umd-rich-text-dark {
+  color: #FFFFFF;
+}
+
+.umd-rich-text-dark * {
+  color: #FFFFFF;
+}
+
+.umd-layout-headline-large {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 1024px) {
+  .umd-layout-headline-large {
+    margin-bottom: 24px;
+  }
+}
+
+.umd-sans-largest-uppercase {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1.25em;
+}
+
+@media (min-width: 650px) {
+  .umd-sans-largest-uppercase {
+    font-size: calc(24px + 2vw);
+  }
+}
+
+@media (min-width: 1024px) {
+  .umd-sans-largest-uppercase {
+    font-size: 48px;
+    line-height: 1.04em;
+  }
+}
+
+.umd-sans-largest-uppercase {
+  text-transform: uppercase;
+}
+
+.umd-sans-larger-bold {
+  font-family: 'Interstate', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.40em;
+}
+
+@media (min-width: 650px) {
+  .umd-sans-larger-bold {
+    font-size: calc(18px + 0.5vw);
+  }
+}
+
+@media (min-width: 1024px) {
+  .umd-sans-larger-bold {
+    font-size: 22px;
+    line-height: 1.25em;
+  }
+}
+
+.umd-sans-larger-bold {
+  font-weight: 700;
 }
 
 umd-element-alert-page:not(:defined) {
@@ -1191,6 +2437,59 @@ umd-element-social-sharing:defined {
   }
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.mb-md {
+  margin-bottom: 24px;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.resize {
+  resize: both;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.pl-md {
+  padding-left: 24px;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 :root {
   --red: #E21833;
   --gold: #FFD200;
@@ -1556,4 +2855,33 @@ select[multiple] option:hover {
 
 select[multiple] option:checked {
   background-color: #E6E6E6;
+}
+
+/* UMDDS accessibility - skip to main content link  */
+
+.umd-skip-content {
+  clip: rect(0, 0, 0, 0);
+  border-width: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.umd-skip-content:focus {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 0;
+  background-color: var(--white);
+  outline: 2px solid var(--maryland-yellow);
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  overflow: initial;
+  clip: initial;
+  white-space: initial;
 }

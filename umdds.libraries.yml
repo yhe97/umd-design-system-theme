@@ -5,10 +5,6 @@ design-system:
       css/design-system/compiled.css: {}
   js:
     js/design-system/index.js: {}
-ui:
-  css:
-    theme:
-      css/base/ui.css: {}
 layout:
   css:
     theme:
