@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
-import * as Styles from '@universityofmaryland/web-styles-library';
-import plugin from 'tailwindcss/plugin';
+import * as Styles from "@universityofmaryland/web-styles-library";
+import plugin from "tailwindcss/plugin";
 
 const { token, root: utilities, outputStyles: components } = Styles;
 const { color, font, media } = token;
@@ -17,8 +17,10 @@ const tailwindBase = Object.fromEntries(
   Object.entries(base).map(([key, value]) => [
     key.charAt(0).toLocaleLowerCase() + key.slice(1),
     value,
-  ]),
+  ])
 );
+
+const content = ["./components/**/*.{html,twig,js}"];
 
 const theme = {
   screens: media.breakpoints,

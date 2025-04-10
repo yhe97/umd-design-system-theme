@@ -6,7 +6,6 @@ Drupal Single Directory Components[^2].
 Find currently created SDCs under /components.
 
 [^1]: <https://designsystem.umd.edu/>
-
 [^2]: <https://www.drupal.org/docs/develop/theming-drupal/using-single-directory-components/quickstart>
 
 ## Current Status
@@ -44,7 +43,7 @@ module and Layout Builder, but results are promising.
 
 Note that if overriding individual SDCs, you will want to sub-theme even if only
 using UI Patterns or similar. In this case, you can override individual SDCs
-using the *replaces* syntax[^5]:
+using the _replaces_ syntax[^5]:
 
 ```YAML
 replaces: 'sdc_theme_test:my-card'
@@ -66,7 +65,7 @@ npm install
 To recompile the UMDDS CSS, run the following command:
 
 ```bash
-npx tailwindcss --input src/index.css --output css/design-system/compiled.css
+npx tailwindcss --input css/base/ui.css --output css/design-system/compiled.css
 ```
 
 Which will evaluate src/index.css configuration and pipe the complied file
@@ -76,7 +75,5 @@ Also copy node_modules/@universityofmaryland/web-components-library/dist/index.j
 to js/design-system/index.js
 
 [^3]: <https://www.drupal.org/docs/develop/theming-drupal/using-single-directory-components/using-your-new-single-directory-component#s-using-your-component-in-twig-template>
-
 [^4]: <https://www.drupal.org/project/ui_patterns>
-
 [^5]: <https://www.drupal.org/docs/develop/theming-drupal/using-single-directory-components/creating-a-single-directory-component#s-overriding-components-provided-by-other-modules-or-themes>
