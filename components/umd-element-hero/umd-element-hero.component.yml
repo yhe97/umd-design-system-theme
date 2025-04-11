@@ -4,11 +4,11 @@ name: UMD Hero
 props:
   type: object
   properties:
-    hero_type:
+    variant:
       type: string
       title: Hero Type
       description: "One of 'overlay', 'stacked', 'minimal'"
-    hero_theme:
+    theme:
       type: string
       title: Hero Theme
       description: "One of 'light', 'dark'"
@@ -16,7 +16,7 @@ props:
       type: string
       title: Image
       description: Hero image
-    hero_alt:
+    hero_image_alt:
       type: string
       title: Image Alt Content
       description: A description of the image for screen readers
@@ -24,7 +24,7 @@ props:
       type: string
       title: Eyebrow
       description: The eyebrow text
-    headline:
+    hero_title:
       type: string
       title: Headline
       description: Headline content

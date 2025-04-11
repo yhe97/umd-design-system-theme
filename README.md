@@ -1,4 +1,4 @@
-# UMD Design System Drupal RND Project
+# UMD Libraries Design System Drupal Theme
 
 Base theme implementing the UMD Design System[^1] using Drupal's
 Single Directory Components (SDC)[^2].
@@ -31,6 +31,21 @@ base theme: umdds
 ```
 
 Sub-theme templates can then employ SDCs when displaying content[^3]
+
+For example, to hardcode a hero component into page.html.twig,
+use the {{ include() }} or {% embed %} tag:
+
+```twig
+{{ include('umdds:umd-element-hero', {
+    variant: 'minimal',
+    theme: 'light',
+    hero_image: 'https://www.lib.umd.edu/sites/default/files/styles/optimized/public/2022-02/McKeldin%20Library%201920x550.jpg',
+    hero_image_alt: 'McKeldin Library',
+    eyebrow: 'Sports News',
+    hero_title: 'Maryland Wins'
+    }, with_context = false)
+}}
+```
 
 Note that if overriding individual SDCs, you will want to sub-theme even if only
 using UI Patterns or similar. In this case, you can override individual SDCs
