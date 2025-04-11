@@ -1,7 +1,7 @@
 # UMD Design System Drupal RND Project
 
-This is a RND project for using the UMD Design System[^1] with
-Drupal Single Directory Components[^2].
+Base theme implementing the UMD Design System[^1] using Drupal's
+Single Directory Components (SDC)[^2].
 
 Find currently created SDCs under /components.
 
@@ -10,16 +10,14 @@ Find currently created SDCs under /components.
 
 ## Current Status
 
-Most web components are implemented in some form, but many need fields defined,
-and nothing has been wired into any templates except for demo purposes.
-
-Nothing should be expected to work at this time.
+Most (but not all) components are implemented and ready to use, but development
+continues, and pull requests are welcome.
 
 ## Usage
 
 The intention is to use this as a base theme or in UI configuration.
 
-When using these SDCs primarily in template code, first reate a new theme folder
+When using these SDCs primarily in template code, first create a new theme folder
 and set umdds as a base theme.
 
 E.g.,
@@ -32,14 +30,7 @@ core_version_requirement: ^11
 base theme: umdds
 ```
 
-Templates can then employ SDCs when displaying content[^3]
-
-Alternatively, SDCs can be used in the UI as part of field or layout
-configuration, in which case you may barely need to touch templates.
-In this case, you may not need a sub-theme.
-
-So far, this theme has only been nominally tested with the UI Patterns[^4]
-module and Layout Builder, but results are promising.
+Sub-theme templates can then employ SDCs when displaying content[^3]
 
 Note that if overriding individual SDCs, you will want to sub-theme even if only
 using UI Patterns or similar. In this case, you can override individual SDCs
@@ -48,6 +39,12 @@ using the _replaces_ syntax[^5]:
 ```YAML
 replaces: 'sdc_theme_test:my-card'
 ```
+
+However the intention is that these components be used to site build in the UI
+using the UI Patterns[^4] module alongside Layout Builder or field configuration.
+
+See the [libraries/main](https://github.com/umd-lib/umd-design-system-theme/tree/libraries/main)
+branch for examples of how to override SDCs.
 
 ## Upgrading
 
