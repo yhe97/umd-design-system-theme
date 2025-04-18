@@ -1,6 +1,9 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
 name: UMD CTA
+group: UMD Design System
+label: Call to Action
+
 props:
   type: object
   properties:
@@ -24,7 +27,7 @@ props:
       type: string
       title: Theme
       description: Use 'light', 'dark'
-    action_type:
+    display:
       type: string
-      title: Action Type
-      description: Use 'primary' or 'secondary'
+      title: Display Type
+      description: Use 'outline', 'secondary', 'primary'

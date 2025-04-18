@@ -1,4 +1,18 @@
-<umd-element-accordion-item data-visual-open="{{ expand_default }}" data-theme="{{ theme }}">
+{#
+/**
+ * @file
+ * UMD Design System Accordion Item component.
+ *
+ * Available variables:
+ * - default_open: true or false.
+ * - headline: string.
+ * - theme: light or dark.
+ * - body_slot: WYSIWYG body content (slot).
+ * - cta_slot: Call to Action (slot).
+*/
+#}
+
+<umd-element-accordion-item data-visual-open="{{ default_open }}" data-theme="{{ theme }}">
   <p slot="headline">
     {{ headline }}
   </p>

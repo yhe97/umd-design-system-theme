@@ -1,22 +1,39 @@
-<umd-element-navigation-utility
-    data-layout-lock="{{ layout }}"
-    {% if alert_off %}
-        data-alert-off="{{ alert_off }}"
-    {% endif %}
-    {% if show_news %}
-        data-news="{{ show_news }}"
-    {% endif %}
-    {% if show_admissions %}
-        data-admissions="{{ show_admissions }}"
-    {% endif %}
-    {% if show_events %}
-        data-events="{{ show_events }}"
-    {% endif %}
-    {% if show_gift %}
-        data-gift="{{ gift_url }}"
-    {% endif %}
-    {% if show_search %}
-        data-search="{{ search_url }}"
-    {% endif %}
-    >
+{#
+/**
+ * @file
+ * UMD Design System navigation utility component.
+ *
+ * Available variables:
+ * - alert_off: string. true or empty.
+ * - layout: string. full or empty.
+ * - show_news: string. true or empty.
+ * - show_admissions: string. true or empty.
+ * - show_events: string. true or empty.
+ * - show_gift: string. true or empty.
+ * - gift_url: string (URL).
+ * - show_search: string. true or empty.
+ * - search_url: string (URL).
+*/
+#}
+
+<umd-element-navigation-utility data-layout-lock="{{ layout }}"
+  {% if alert_off %}
+    data-alert-off="{{ alert_off }}"
+  {% endif %}
+  {% if show_news %}
+    data-news="{{ show_news }}"
+  {% endif %}
+  {% if show_admissions %}
+    data-admissions="{{ show_admissions }}"
+  {% endif %}
+  {% if show_events %}
+    data-events="{{ show_events }}"
+  {% endif %}
+  {% if show_gift %}
+    data-gift="{{ gift_url }}"
+  {% endif %}
+  {% if show_search %}
+    data-search="{{ search_url }}"
+  {% endif %}
+  >
 </umd-element-navigation-utility>

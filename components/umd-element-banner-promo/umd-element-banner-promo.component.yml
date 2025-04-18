@@ -1,6 +1,9 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
 name: UMD Promo
+group: UMD Design System
+label: Promo
+
 props:
   type: object
   properties:
@@ -12,6 +15,7 @@ props:
       type: string
       title: Theme
       description: Use 'light', 'dark'
+
 slots:
   cta_slot:
     title: Call to Action (UMD CTA)

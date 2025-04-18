@@ -1,6 +1,9 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
 name: UMD Carousel Cards
+group: UMD Design System
+label: Carousel Card
+
 props:
   type: object
   properties:
@@ -10,9 +13,6 @@ props:
     headline_url:
       type: string
       title: Headline URL
-    headline_sr_text:
-      type: string
-      title: Headline Screen Reader Text
 slots:
   cta_slot:
     title: Call to Action (UMD CTA)

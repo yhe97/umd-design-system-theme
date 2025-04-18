@@ -1,3 +1,18 @@
+{#
+/**
+ * @file
+ * UMD Design System Navigation Header component.
+ *
+ * Available variables:
+ * - header_image: image.
+ * - header_image_alt: string.
+ * - header_image_link: string (URL).
+ * - header_search_url: string (URL).
+ * - slide_menu_slot: Menu (slot).
+ * - main_navigation_slot: Navigation (slot).
+*/
+#}
+
 <umd-element-navigation-header role="navigation" search-url="{{ header_search_url }}">
   {% if header_image_link %}
     <a href="{{ header_image_link }}" slot="logo">

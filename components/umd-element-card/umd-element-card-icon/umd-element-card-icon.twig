@@ -1,8 +1,23 @@
+{#
+/**
+ * @file
+ * UMD Design System Card icon component.
+ *
+ * Available variables:
+ * - card_image: string (url).
+ * - card_image_alt: string.
+ * - headline: string.
+ * - headline_url: string (url).
+ * - body_slot: WYSIWYG (slot).
+*/
+#}
+
+
 <umd-element-card-icon data-theme="">
   <img slot="image"
-    src="https://umd-design.files.svdcdn.com/production/component/building.svg?dm=1717159289&v=1717159265"
-    alt="Example Alt Text">
-  <h2 slot="headline"><a href="#">Lorem Ipsum Dolor Si</a></h2>
+    src="{{ card_image }}"
+    alt="{{ card_image_alt }}">
+  <h2 slot="headline"><a href="{{ headline_url }}">{{ headline }}</a></h2>
   <div slot="text" class="umd-rich-text">
     {% block body_slot %}{% endblock %}
   </div>

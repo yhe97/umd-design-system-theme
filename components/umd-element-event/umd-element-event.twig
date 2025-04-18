@@ -1,29 +1,59 @@
+{#
+/**
+ * @file
+ * UMD Design System Event component.
+ *
+ * Available variables:
+ * - title: string.
+ * - description: string.
+ * - location: string.
+ * - event_link: string (url)
+ * - image: string (uri)
+ * - image_alt: string.
+ * - start_date: string (date).
+ * - end_date: string (date).
+*/
+#}
+
 <umd-element-event>
-  <a slot="image" href="https://umd.edu" target="_blank">
+  <a slot="image" href="{{ link }}" target="_blank">
     <img
-      src="https://optimise2.assets-servd.host/umd-calendar/production/hero-images/MarylandDay_04302022_JC_8549-1.jpg?w=1920&h=1280&auto=compress%2Cformat&fit=crop&dm=1708548305&s=737ca875636998f36847b08a013a3eac"
-      alt="Example Alt Text">
+      src="{{ image }}"
+      alt="{{ image_alt }}">
   </a>
   <h2 slot="headline">
-    <a href="https://umd.edu">
-      Maryland Day
-    </a>
+    {% if link %}
+      <a href="{{ link }}">
+        {{ title }}
+      </a>
+    {% else %}
+      {{ title }}
+    {% endif %}
   </h2>
-  <div slot="text">
-    <p>
-      Five learning neighborhoods. Hundreds of activities. One unforgettable day of fun and discovery.
-    </p>
-  </div>
-  <div slot="start-date-iso">
-    2024-04-27T10:00:00.000Z
-  </div>
+  {% if description %}
+    <div slot="text">
+      <p>
+        {{ description }}
+      </p>
+    </div>
+  {% endif %}
 
-  <div slot="end-date-iso">
-    2024-04-27T16:00:00.000Z
-  </div>
+  {% if start_date %}
+    <div slot="start-date-iso">
+      {{ start_date|date('Y-m-d\\TH:i:s') }}
+    </div>
+  {% endif %}
 
-  <div slot="location">
-    Optional Location
-  </div>
+  {% if end_date %}
+    <div slot="end-date-iso">
+      {{ end_date|date('Y-m-d\\TH:i:s') }}
+    </div>
+  {% endif %}
+
+  {% if location %}
+    <div slot="location">
+      {{ location }}
+    </div>
+  {% endif %}
   {% block cta_slot %}{% endblock %}
 </umd-element-event>

@@ -1,6 +1,9 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
 name: UMD Image Expand
+group: UMD Design System
+label: Image Text
+
 props:
   type: object
   properties:

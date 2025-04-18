@@ -1,3 +1,16 @@
+{#
+/**
+ * @file
+ * UMD Design System slider component.
+ *
+ * Available variables:
+ * - headline: string.
+ * - theme: string. light or dark.
+ * - dates_slot: string (date).
+ * - cta_slot: Call to Action (slot).
+*/
+#}
+
 <umd-element-slider-events data-theme="{{ theme }}">
   <div slot="headline">{{ headline }}</div>
   {% block cta_slot %}{% endblock %}

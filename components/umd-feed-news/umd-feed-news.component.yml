@@ -1,6 +1,9 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
 name: UMD Feed News
+group: UMD Design System
+label: News
+
 props:
   type: object
   properties:

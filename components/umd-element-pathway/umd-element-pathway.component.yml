@@ -1,6 +1,9 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
 name: UMD Pathway
+group: UMD Design System
+label: Pathway
+
 props:
   type: object
   properties:

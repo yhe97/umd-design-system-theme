@@ -1,3 +1,20 @@
+{#
+/**
+ * @file
+ * UMD Design System pathway component.
+ *
+ * Available variables:
+ * - pathway_image:
+ * - pathway_image_alt: string.
+ * - pathway_image_caption: string.
+ * - headline: string.
+ * - eyebrow: string.
+ * - pathway_type: string. sticy or standard.
+ * - cta_slot: Call to Action (slot).
+ * - body_slot: WYSIWYG (slot.
+*/
+#}
+
 <umd-element-pathway image-position="left" type="{{ pathway_type }}">
   <div slot="image" data-caption="{{ pathway_image_caption }}">
     <img src="{{ pathway_image }}" alt="{{ pathway_image_alt }}">

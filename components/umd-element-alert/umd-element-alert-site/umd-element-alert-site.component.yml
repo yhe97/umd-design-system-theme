@@ -1,12 +1,18 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
-name: UMD Alert Page
+name: UMD Alert Site
+group: UMD Design System
+label: Alert
+
 props:
   type: object
   properties:
     headline:
       type: string
       title: Headline
+    headline_link:
+      type: string
+      title: Headline Link
 slots:
   cta_slot:
     title: Call to Action (UMD CTA)

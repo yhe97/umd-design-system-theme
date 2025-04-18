@@ -1,33 +1,50 @@
-  <umd-element-card-overlay type="image">
-    <img slot="image" src="{{ card_image }}"
-      alt="{{ card_image_alt }}">
+{#
+/**
+ * @file
+ * UMD Design System Card overlay component.
+ *
+ * Available variables:
+ * - card_image: Intended for accordion elements (slot).
+ * - card_image_alt: string.
+ * - eyebrow: string.
+ * - headline_url: string (url).
+ * - headline: string.
+ * - body_slot: WYSIWYG (slot).
+ * - element_date: string (date).
+ * - cta_slot: Intended for CTA component (slot).
+*/
+#}
 
-    {% if eyebrow %}
-      <div slot="eyebrow">
-        <p>
-         {{ eyebrow }} 
-        </p>
-      </div>
-    {% endif %}
+<umd-element-card-overlay type="image">
+  <img slot="image" src="{{ card_image }}"
+    alt="{{ card_image_alt }}">
 
-    <h2 slot="headline">
-      <a href="{{ headline_url }}">
-        <span class="sr-only">{{ headline_sr_text }}</span>
-        <span aria-hidden="true">{{ headline }}</span>
-      </a>
-    </h2>
-
-    <div slot="text">
-      {% block body_slot %}{% endblock %}
+  {% if eyebrow %}
+    <div slot="eyebrow">
+      <p>
+       {{ eyebrow }}
+      </p>
     </div>
+  {% endif %}
 
-    {% if element_date %}
-      <div slot="date">
-        <date>
-          {{ element_date|date('F j, Y') }}
-        </date>
-      </div>
-    {% endif %}
+  <h2 slot="headline">
+    <a href="{{ headline_url }}">
+      <span class="sr-only">{{ headline }}</span>
+      <span aria-hidden="true">{{ headline }}</span>
+    </a>
+  </h2>
 
-    {% block cta_slot %}{% endblock %}
-  </umd-element-card-overlay>
+  <div slot="text">
+    {% block body_slot %}{% endblock %}
+  </div>
+
+  {% if element_date %}
+    <div slot="date">
+      <date>
+        {{ element_date|date('F j, Y') }}
+      </date>
+    </div>
+  {% endif %}
+
+  {% block cta_slot %}{% endblock %}
+</umd-element-card-overlay>

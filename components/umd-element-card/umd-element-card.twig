@@ -1,3 +1,24 @@
+{#
+/**
+ * @file
+ * UMD Design System Card component.
+ *
+ * Available variables:
+ * - card_image: URI.
+ * - card_image_alt: string.
+ * - eyebrow: string.
+ * - headline: string.
+ * - headline_url: string (URL).
+ * - element_date: string (date).
+ * - border: string. true or empty.
+ * - aligned: string. true or empty.
+ * - display_type: list or blank.
+ * - cta_slot: Intended for Call to Action (slot).
+ * - body_slot: WYSIWYG (slot).
+*/
+#}
+
+
 <umd-element-card border="{{ border }}" aligned="{{ aligned }}" display="{{ display_type }}">
   <img slot="image" src="{{ card_image }}"
     alt="{{ card_image_alt }}" />

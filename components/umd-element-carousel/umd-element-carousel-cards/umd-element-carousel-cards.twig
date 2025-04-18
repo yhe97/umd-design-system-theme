@@ -1,7 +1,21 @@
+{#
+/**
+ * @file
+ * UMD Design System Carousel card component.
+ *
+ * Available variables:
+ * - headline: string.
+ * - headline_url: string (url)
+ * - cta_slot: Call to Action (slot)
+ * - cards_slot: Cards (slot)
+ * - body_slot: WYSIWYG (slot).
+*/
+#}
+
 <umd-element-carousel-cards resize="">
   <h2 slot="headline">
     <a href="{{ headline_url }}">
-      <span class="sr-only">{{ headline_sr_text }}</span>
+      <span class="sr-only">{{ headline }}</span>
       <span aria-hidden="true">{{ headline }}</span>
     </a>
   </h2>

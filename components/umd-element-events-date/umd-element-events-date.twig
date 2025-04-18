@@ -1,9 +1,22 @@
+{#
+/**
+ * @file
+ * UMD Design System events date component.
+ *
+ * Available variables:
+ * - event_date: string (date).
+ * - event: string.
+ * - event_url: string (URL).
+ * - theme: string. light or dark.
+*/
+#}
+
 <umd-element-events-date data-theme="{{ theme }}">
-    <p slot="month">
-        {{ element_date|date('F') }}
-    </p>
-    <div slot="start-date-iso">
-        {{ element_date|date('Y-m-d\\TH:i:s') }}
-    </div>
-    <p slot="headline"><a href="{{ event_url }}">{{ event }}</a></p>
+  <p slot="month">
+    {{ event_date|date('F') }}
+  </p>
+  <div slot="start-date-iso">
+    {{ event_date|date('Y-m-d\\TH:i:s') }}
+  </div>
+  <p slot="headline"><a href="{{ event_url }}">{{ event }}</a></p>
 </umd-element-events-date>

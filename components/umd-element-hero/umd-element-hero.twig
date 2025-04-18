@@ -1,3 +1,20 @@
+{#
+/**
+ * @file
+ * UMD Design System hero component.
+ *
+ * Available variables:
+ * - variant: string. 'overlay', 'stacked', 'minimal'.
+ * - theme: string. 'light', 'dark'.
+ * - hero_image: image.
+ * - hero_image_alt: string.
+ * - eyebrow: string.
+ * - hero_title: string.
+ * - cta_slot: Call to Action (slot).
+ * - body_slot: WYSIWYG (slot).
+*/
+#}
+
 <umd-element-hero type="{{ variant }}" data-theme="{{ theme }}">
   {% if hero_image %}
     <img slot="image" src="{{ hero_image }}"

@@ -1,5 +1,15 @@
-  <umd-element-breadcrumb>
-    <div slot="paths">
-      {% block breadcrumbs_slot %}<a href="/">Home</a>{% endblock %}
-    </div>
-  </umd-element-breadcrumb>
+{#
+/**
+ * @file
+ * UMD Design System Breadcrumb component.
+ *
+ * Available variables:
+ * - breadcrumbs_slot: Array output for breadcrumbs. Implement using core breadcrumbs template.
+*/
+#}
+
+<umd-element-breadcrumb>
+  <div slot="paths">
+    {% block breadcrumbs_slot %}<a href="/">Home</a>{% endblock %}
+  </div>
+</umd-element-breadcrumb>
