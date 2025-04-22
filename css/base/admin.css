@@ -320,7 +320,7 @@ div.layout-builder__section .layout-builder__region .contextual-region.focus {
 
 div.layout-builder__section .layout-builder__add-block {
   padding: 0;
-  margin: 0.5rem 0rem;
+  margin: 0.5rem;
 
   background-color: #fff9d5;
   border: 1px solid #bdbfc8;
