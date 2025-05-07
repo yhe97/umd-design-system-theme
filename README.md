@@ -11,14 +11,19 @@ Find currently created SDCs under /components.
 ## Current Status
 
 Most (but not all) components are implemented and ready to use, but development
-continues, and pull requests are welcome.
+continues. Not every component is tested, so if you encounter issues
+consider fixing it and submitting a fix as a pull request or in an Issue comment
+so that everyone can benefit from the fix.
+
+We hope that this will become a widely used base theme around the UMD campus
+with different organizations extending it as needed.
 
 ## Usage
 
-The intention is to use this as a base theme or in UI configuration.
+This theme can be used as a base theme or in UI configuration.
 
-When using these SDCs primarily in template code, first create a new theme folder
-and set umdds as a base theme.
+To create a new subtheme based on this theme, first create a new theme folder
+and set umdds as the *base theme*.
 
 E.g.,
 
@@ -32,8 +37,7 @@ base theme: umdds
 
 Sub-theme templates can then employ SDCs when displaying content[^3]
 
-For example, to hardcode a hero component into page.html.twig,
-use the {{ include() }} or {% embed %} tag:
+For example, to hardcode a hero component, use the {{ include() }} or {% embed %} tag:
 
 ```twig
 {{ include('umdds:umd-element-hero', {
@@ -43,6 +47,20 @@ use the {{ include() }} or {% embed %} tag:
     hero_image_alt: 'McKeldin Library',
     eyebrow: 'Sports News',
     hero_title: 'Maryland Wins'
+    }, with_context = false)
+}}
+```
+
+Or with field content, such as in a node.html.twig:
+
+```twig
+{{ include('umdds:umd-element-hero', {
+    variant: 'minimal',
+    theme: 'light',
+    hero_image: {{ file_url(content.field_hero_image[0]['#media'].field_media_image.entity.uri.value | image_style('optimized')) }},
+    hero_image_alt: {{ content.field_hero_image[0]['#media'].field_media_image.alt }},
+    eyebrow: {{ content.field_eyebrow|field_value }},
+    hero_title: {{ node.title.value }}
     }, with_context = false)
 }}
 ```
@@ -61,7 +79,7 @@ using the UI Patterns[^4] module alongside Layout Builder or field configuration
 See the [libraries/main](https://github.com/umd-lib/umd-design-system-theme/tree/libraries/main)
 branch for examples of how to override SDCs.
 
-## Upgrading
+## Upgrading Theme to Latest Design System
 
 Because the theme comes with JS and precompiled CSS, this procedure should only be
 necessary when upgrading the theme for a Design System upgrade.
