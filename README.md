@@ -18,6 +18,19 @@ so that everyone can benefit from the fix.
 We hope that this will become a widely used base theme around the UMD campus
 with different organizations extending it as needed.
 
+## Installation
+
+To install, you can either:
+
+* Clone this repository (main branch) into your themes directory (preferred method if you intend to develop or submit pull requests)
+* Install using composer (preferred if you plan to subtheme off this theme)
+
+```bash
+composer require umd-lib/umd-design-system-theme
+```
+
+See: https://packagist.org/packages/umd-lib/umd-design-system-theme
+
 ## Usage
 
 This theme can be used as a base theme or in UI configuration.
