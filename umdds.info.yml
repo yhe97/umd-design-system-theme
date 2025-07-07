@@ -1,6 +1,6 @@
 name: umdds
 type: theme
-"base theme": stable9
+base theme: stable9
 version: 0.1.0
 libraries:
   - umdds/design-system

@@ -1,0 +1,7 @@
+services:
+  umdds.twig.namespace:
+    class: Drupal\Core\Template\TwigNamespace
+    arguments: ['@file_system', '@module_handler']
+    tags:
+      - { name: twig.namespace, namespace: umdds, path: '@umdds/templates/components' }
+
