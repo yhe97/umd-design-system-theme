@@ -1,4 +1,6 @@
-# (Base) UMD Libraries Design System Base Drupal Theme
+# UMD Design System Base Drupal Theme
+
+> Provided by the UMD Libraries.
 
 Base theme implementing the UMD Design System[^1] using Drupal's
 Single Directory Components (SDC)[^2].
