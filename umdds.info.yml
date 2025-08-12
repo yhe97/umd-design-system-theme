@@ -2,13 +2,13 @@ name: umdds
 type: theme
 "base theme": stable9
 version: 0.1.0
+description: A base theme implementing the UMD Design System, provided by the UMD Libraries to serve as a foundation for the UMD Libraries theme.
 libraries:
   - umdds/design-system
   - umdds/ui
   - umdds/layout
   - umdds/admin
   - core/normalize
-description: ""
 core_version_requirement: ^11
 logo: logo.svg
 regions:
