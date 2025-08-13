@@ -12,13 +12,7 @@ Find currently created SDCs under /components.
 
 ## Current Status
 
-Most (but not all) components are implemented and ready to use, but development
-continues. Not every component is tested, so if you encounter issues
-consider fixing it and submitting a fix as a pull request or in an Issue comment
-so that everyone can benefit from the fix.
-
-We hope that this will become a widely used base theme around the UMD campus
-with different organizations extending it as needed.
+Currently developed version 1.x. All work should be done against this branch.
 
 ## Installation
 
