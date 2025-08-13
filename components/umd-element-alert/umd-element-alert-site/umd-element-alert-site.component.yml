@@ -4,18 +4,12 @@ name: UMD Alert Site
 group: UMD Design System
 label: Alert
 
-props:
-  type: object
-  properties:
-    headline:
-      type: string
-      title: Headline
-    headline_link:
-      type: string
-      title: Headline Link
 slots:
+  headline:
+    title: Headline (String / Token)
+    description: Title or header
   cta_slot:
-    title: Call to Action (UMD CTA)
+    title: Call to Action (UMD CTA Component)
     description: Slot intended for CTA
   body_slot:
     title: Body (WYSIWYG)

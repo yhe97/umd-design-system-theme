@@ -1,8 +1,3 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
 
 name: UMD Carousel Image
-props:
-  type: object
-
-#   properties:
-# slots:

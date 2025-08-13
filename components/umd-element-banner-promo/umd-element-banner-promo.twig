@@ -13,7 +13,7 @@
 
 <umd-element-banner-promo data-theme="{{ theme }}">
   <p slot="headline">
-    {{ headline }}
+    {% block headline %}{% endblock %}
   </p>
 
   <div slot="text" class="umd-rich-text">

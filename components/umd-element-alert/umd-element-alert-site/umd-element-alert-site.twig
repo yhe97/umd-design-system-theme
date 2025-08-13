@@ -13,9 +13,7 @@
 
 <umd-element-alert-site>
   <h2 slot="headline">
-    <a href="{{ headline_link }}">
-      {{ headline }}
-    </a>
+    {% block headline %}{% endblock %}
   </h2>
   <div slot="body" class="umd-rich-text">
     {% block body_slot %}{% endblock %}

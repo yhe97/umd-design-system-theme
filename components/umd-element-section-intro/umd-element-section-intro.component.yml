@@ -7,9 +7,6 @@ label: Intro
 props:
   type: object
   properties:
-    headline:
-      type: string
-      title: Headline
     separator:
       type: string
       title: Separator
@@ -18,6 +15,8 @@ props:
       title: Theme
       description: Use 'light', 'dark'
 slots:
+  headline:
+    title: Headline (String / Token)
   cta_slot:
     title: Call to Action (UMD CTA)
     description: Slot intended for CTA

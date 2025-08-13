@@ -16,30 +16,29 @@ props:
       title: Layout
       description: Use 'full' or leave empty
     show_news:
-      type: string
+      type: boolean
       title: Show News Link
-      description: Use 'true' or leave empty
+      description: Select to show news
     show_admissions:
-      type: string
+      type: boolean
       title: Show Admissions Link
-      description: Use 'true' or leave empty
+      description: Select to show admissions link
     show_events:
-      type: string
+      type: boolean
       title: Show Events Link
-      description: Use 'true' or leave empty
+      description: Select to show events
     show_gift:
-      type: string
+      type: boolean
       title: Show Gift Link
-      description: Use 'true' or leave empty
-    gift_url:
-      type: string
-      title: Gift URL
-      description: Enter URL or leave blank
+      description: Select to show gift link
     show_search:
-      type: string
+      type: boolean
       title: Show Search
-      description: Use 'true' or leave empty
-    search_url:
-      type: string
-      title: Search URL
-      description: Enter URL or leave blank
+      description: Select to show search
+slots:
+  gift_url:
+    title: Gift URL (String URL)
+    description: Enter URL or leave blank
+  search_url:
+    title: Search URL (String URL)
+    description: Enter URL or leave blank
