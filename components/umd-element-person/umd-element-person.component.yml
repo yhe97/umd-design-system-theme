@@ -4,25 +4,18 @@ name: UMD Person
 group: UMD Design System
 label: Person
 
-props:
-  type: object
-  properties:
-    photo:
-      type: string
-      title: Photo
-    photo_alt:
-      type: string
-      title: Photo Alt Text
-    person_name:
-      type: string
-      title: Name
-    job_title:
-      type: string
-      title: Job Title
-    email:
-      type: string
-      title: Email Address
 slots:
+  photo:
+    title: Photo (Media String)
+  photo_alt:
+    title: Photo Alt Text (String / Token)
+  person_name:
+    title: Name (String / Token)
+  job_title:
+    title: Job Title (String / Token)
+  email:
+    type: string
+    title: Email Address (String / Token)
   cta_slot:
-    title: Call to Action (UMD CTA)
+    title: Call to Action (UMD CTA Component)
     description: Slot intended for CTA

@@ -11,17 +11,17 @@ props:
       type: boolean
       title: Expand
       description: Expand this accordion by default
-    headline:
-      type: string
-      title: Headline
     theme:
       type: string
       title: Theme
       description: Use 'light', 'dark'
 
 slots:
+  headline:
+    title: Headline (String / Token)
+    description: Accordion title or header
   cta_slot:
-    title: Call to Action (UMD CTA)
+    title: Call to Action (UMD CTA Component)
     description: Slot intended for CTA
   body_slot:
     title: Body (WYSIWYG)

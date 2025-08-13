@@ -4,16 +4,11 @@ name: UMD Tab
 group: UMD Design System
 label: Tab
 
-props:
-  type: object
-  properties:
-    tab_title:
-      type: string
-      title: Tab Title
-    tab_heading:
-      type: string
-      title: Tab Heading
 slots:
+  tab_title:
+    title: Tab Title (String / Token)
+  tab_heading:
+    title: Tab Heading (String / Token)
   body_slot:
     title: Body (WYSIWYG)
     description: Slot intended for WYSIWYG editor content

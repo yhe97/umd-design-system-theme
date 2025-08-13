@@ -4,33 +4,18 @@ name: UMD Card Overlay
 group: UMD Design System
 label: Card
 
-props:
-  type: object
-  properties:
-    card_image:
-      type: string
-      title: Card Image
-    card_image_alt:
-      type: string
-      title: Card Image Alt Text
-    eyebrow:
-      type: string
-      title: Eyebrow
-    headline:
-      type: string
-      title: Headline
-    headline_url:
-      type: string
-      title: Headline URL
-    headline_sr_text:
-      type: string
-      title: Headline Screen Reader Text
-    element_date:
-      type: string
-      title: Date
 slots:
+  eyebrow:
+    title: Eyebrow (String / Token)
+  headline:
+    title: Headline (String / Token)
+    description: Title or header
+  card_image:
+    title: Card Image (Media String)
+  card_image_alt:
+    title: Card Image (String / Token)
   cta_slot:
-    title: Call to Action (UMD CTA)
+    title: Call to Action (UMD CTA Component)
     description: Slot intended for CTA
   body_slot:
     title: Body (WYSIWYG)

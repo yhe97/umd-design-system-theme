@@ -7,26 +7,21 @@ label: Pathway
 props:
   type: object
   properties:
-    pathway_image:
-      type: string
-      title: Image
-    pathway_image_alt:
-      type: string
-      title: Image
-    pathway_image_caption:
-      type: string
-      title: Image
-    headline:
-      type: string
-      title: Headline
-    eyebrow:
-      type: string
-      title: Eyebrow
     pathway_type:
       type: string
       title: Pathway Type
       description: Use 'sticky', 'standard'
 slots:
+  pathway_image:
+    title: Image (Media String)
+  pathway_image_alt:
+    title: Image Alt (String / Token)
+  pathway_image_caption:
+    title: Caption (String / Token)
+  headline:
+    title: Headline (String / Token)
+  eyebrow:
+    title: Eyebrow (String / Token)
   cta_slot:
     title: Call to Action (UMD CTA)
     description: Slot intended for CTA

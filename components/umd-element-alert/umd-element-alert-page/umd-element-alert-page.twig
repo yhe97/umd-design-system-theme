@@ -12,7 +12,7 @@
 
 <umd-element-alert-page icon="true">
   <h2 slot="headline">
-    {{ headline }}
+    {% block headline %}{% endblock %}
   </h2>
 
   <div slot="body" class="umd-rich-text">

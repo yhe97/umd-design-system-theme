@@ -15,26 +15,22 @@ props:
       type: string
       title: Hero Theme
       description: "One of 'light', 'dark'"
-    hero_image:
-      type: string
-      title: Image
-      description: Hero image
-    hero_image_alt:
-      type: string
-      title: Image Alt Content
-      description: A description of the image for screen readers
-    eyebrow:
-      type: string
-      title: Eyebrow
-      description: The eyebrow text
-    hero_title:
-      type: string
-      title: Headline
-      description: Headline content
 slots:
-  cta_slot:
-    title: Call to Action (UMD CTA)
-    description: Slot intended for CTA Component
+  eyebrow:
+    title: Eyebrow (String / Token)
+    description: The eyebrow text
+  hero_title:
+    title: Headline (String / Token)
+    description: Headline content
   body_slot:
     title: Body (WYSIWYG)
     description: Slot intended for WYSIWYG editor content
+  hero_image:
+    title: Hero Image (Media String)
+    description: Hero image
+  hero_image_alt:
+    title: Image Alt (String / Token)
+    description: A description of the image for screen readers
+  cta_slot:
+    title: Call to Action (UMD CTA Component)
+    description: Slot intended for CTA Component

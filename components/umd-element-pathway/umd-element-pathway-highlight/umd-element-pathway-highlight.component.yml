@@ -4,22 +4,15 @@ name: UMD Pathway Highlight
 group: UMD Design System
 label: Highlight
 
-props:
-  type: object
-  properties:
-    highlight:
-      type: string
-      title: Highlight Text
-    highlight_attrib:
-      type: string
-      title: Highlight Attribution
-    eyebrow:
-      type: string
-      title: Eyebrow
-    headline:
-      type: string
-      title: Headline
 slots:
+  highlight:
+    title: Highlight Text (String / Token)
+  highlight_attrib:
+    title: Attribution (String / Token)
+  eyebrow:
+    title: Eyebrow (String / Token)
+  headline:
+    title: Headline (String / Token)
   cta_slot:
     title: Call to Action (UMD CTA)
     description: Slot intended for CTA

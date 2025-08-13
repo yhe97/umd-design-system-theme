@@ -7,15 +7,13 @@ label: Quote
 props:
   type: object
   properties:
-    attribution:
-      type: string
-      title: Quote Attribution
-    eyebrow:
-      type: string
-      title: Eyebrow
 slots:
+  attribution:
+    title: Quote Attribution (String / Token)
+  eyebrow:
+    title: Eyebrow (String / Token)
   cta_slot:
-    title: Call to Action (UMD CTA)
+    title: Call to Action (UMD CTA Component)
     description: Slot intended for CTA
   body_slot:
     title: Body (WYSIWYG)
