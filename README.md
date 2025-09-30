@@ -1,4 +1,9 @@
-# (Base) UMD Libraries Design System Drupal Theme
+# UMD Design System Base Drupal Theme
+
+Provided by the UMD Libraries.
+
+> [!IMPORTANT]
+> Please see <https://github.com/umd-lib/umdlib-design-system-theme> for the Libraries' continued work on this concept.
 
 Base theme implementing the UMD Design System[^1] using Drupal's
 Single Directory Components (SDC)[^2].
@@ -10,13 +15,7 @@ Find currently created SDCs under /components.
 
 ## Current Status
 
-Most (but not all) components are implemented and ready to use, but development
-continues. Not every component is tested, so if you encounter issues
-consider fixing it and submitting a fix as a pull request or in an Issue comment
-so that everyone can benefit from the fix.
-
-We hope that this will become a widely used base theme around the UMD campus
-with different organizations extending it as needed.
+Currently developed version 1.x. All work should be done against this branch.
 
 ## Installation
 

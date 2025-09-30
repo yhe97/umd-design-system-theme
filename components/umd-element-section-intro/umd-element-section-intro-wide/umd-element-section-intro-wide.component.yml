@@ -7,14 +7,13 @@ label: Wide Intro
 props:
   type: object
   properties:
-    headline:
-      type: string
-      title: Headline
     theme:
       type: string
       title: Theme
       description: Use 'light', 'dark'
-  slots:
-    cta_slot:
-      title: Call to Action (UMD CTA)
-      description: Slot intended for CTA
+slots:
+  headline:
+    title: Headline (String / Token)
+  cta_slot:
+    title: Call to Action (UMD CTA)
+    description: Slot intended for CTA

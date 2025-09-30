@@ -7,18 +7,17 @@ label: Promo
 props:
   type: object
   properties:
-    headline:
-      type: string
-      title: Headline
-      description: The accordion element title
     theme:
       type: string
       title: Theme
       description: Use 'light', 'dark'
 
 slots:
+  headline:
+    title: Headline (String / Token)
+    description: Title or header
   cta_slot:
-    title: Call to Action (UMD CTA)
+    title: Call to Action (UMD CTA Component)
     description: Slot intended for CTA
   body_slot:
     title: Body (WYSIWYG)

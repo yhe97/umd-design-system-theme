@@ -4,38 +4,26 @@ name: UMD Bio
 group: UMD Design System
 label: Biography
 
-props:
-  type: object
-  properties:
-    photo:
-      type: string
-      title: Photo
-    photo_alt:
-      type: string
-      title: Photo Alt Text
-    person_name:
-      type: string
-      title: Name
-    job_title:
-      type: string
-      title: Job Title
-    organization_url:
-      type: string
-      title: Organization URL
-    organization:
-      type: string
-      title: Organization
-    pronouns:
-      type: string
-      title: Pronouns
-    telephone:
-      type: string
-      title: Telephone
-      description: Numbers only. No dashes, dots, etc.
-    email:
-      type: string
-      title: Email Address
 slots:
+  photo:
+    title: Photo (Media String)
+  photo_alt:
+    title: Photo Alt Text (String / Token)
+  person_name:
+    title: Name (String / Token)
+  job_title:
+    title: Job Title (String / Token)
+  organization_url:
+    title: Organization URL (String / Token)
+  organization:
+    title: Organization (String / Token)
+  pronouns:
+    title: Pronouns (String / Token)
+  telephone:
+    title: Telephone (String / Token)
+    description: Numbers only. No dashes, dots, etc.
+  email:
+    title: Email Address (String / Token)
   body_slot:
     title: Body (WYSIWYG)
     description: Slot intended for WYSIWYG editor content

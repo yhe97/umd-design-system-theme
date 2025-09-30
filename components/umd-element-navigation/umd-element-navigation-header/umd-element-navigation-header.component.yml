@@ -4,22 +4,15 @@ name: UMD Navigation Header
 group: UMD Design System
 label: Header
 
-props:
-  type: object
-  properties:
-    header_image:
-      type: string
-      title: Header Image (URL)
-    header_image_alt:
-      type: string
-      title: Header Image Alt
-    header_image_link:
-      type: string
-      title: Header Image Link
-    header_search_url:
-      type: string
-      title: Search URL
 slots:
+  header_image:
+    title: Header Image (Media String)
+  header_image_alt:
+    title: Header Image Alt (String / Token)
+  header_image_link:
+    title: Header Image Link (String URL)
+  header_search_url:
+    title: Search URL (String URL)
   slide_menu_slot:
     title: Slide Menu slot
     description: Slot intended for slide menu

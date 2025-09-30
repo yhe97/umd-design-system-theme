@@ -7,18 +7,6 @@ label: Call to Action
 props:
   type: object
   properties:
-    cta:
-      type: string
-      title: Call to Action
-      description: URL
-    cta_text:
-      type: string
-      title: Call to Action text
-      description: Text related to CTA
-    cta_aria_label:
-      type: string
-      title: Call to Action aria-label
-      description: Text related to CTA
     element_size:
       type: string
       title: Use 'standard'
@@ -31,3 +19,13 @@ props:
       type: string
       title: Display Type
       description: Use 'outline', 'secondary', 'primary'
+slots:
+  cta:
+    title: CTA URL (String / URL)
+    description: The Call to Action URL
+  cta_text:
+    title: CTA Text (String / Token)
+    description: Text related to CTA
+  cta_aria_label:
+    title: CTA aria-label (String / Token)
+    description: For accessability

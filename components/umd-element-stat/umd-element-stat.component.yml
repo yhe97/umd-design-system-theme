@@ -4,18 +4,13 @@ name: UMD Stat
 group: UMD Design System
 label: Statistic
 
-props:
-  type: object
-  properties:
-    stat:
-      type: string
-      title: Stat
-      description: E.g., '10th'
-    subtext:
-      type: string
-      title: Sub-Text
-      description: For example, use for attribution
 slots:
+  stat:
+    title: Stat (String / Token)
+    description: E.g., '10th'
+  subtext:
+    title: Sub-Text (String / Token)
+    description: For example, use for attribution
   body_slot:
     title: Body (WYSIWYG)
     description: Slot intended for WYSIWYG editor content

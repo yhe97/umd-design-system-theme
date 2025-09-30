@@ -14,7 +14,7 @@
 
 <umd-element-accordion-item data-visual-open="{{ default_open }}" data-theme="{{ theme }}">
   <p slot="headline">
-    {{ headline }}
+    {% block headline %}{% endblock %}
   </p>
   <div slot="text" class="umd-rich-text">
     {% block body_slot %}{% endblock %}
